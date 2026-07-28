@@ -7,13 +7,24 @@ const url = (import.meta.env.VITE_SUPABASE_URL ?? '').trim();
 const anonKey = (import.meta.env.VITE_SUPABASE_ANON_KEY ?? '').trim();
 const allowDemo = import.meta.env.VITE_ALLOW_DEMO === 'true';
 
+function isValidHttpUrl(value: string): boolean {
+  try {
+    const parsed = new URL(value);
+    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+  } catch {
+    return false;
+  }
+}
+
 const GLOBAL_KEY = '__juza_supabase_client__';
 
 type GlobalSupabase = typeof globalThis & {
   [GLOBAL_KEY]?: JuzaSupabaseClient;
 };
 
-export const isSupabaseConfigured = Boolean(url && anonKey);
+export const isSupabaseConfigured = Boolean(
+  url && anonKey && isValidHttpUrl(url),
+);
 
 export type DataMode = 'supabase' | 'demo' | 'missing';
 
