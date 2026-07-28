@@ -1,0 +1,531 @@
+{
+  "brand": {
+    "name": "Juza",
+    "tagline": "L’information citoyenne pour tous."
+  },
+  "nav": {
+    "home": "Accueil",
+    "browse": "Parcourir",
+    "search": "Rechercher",
+    "help": "Aide",
+    "dashboard": "Tableau de bord",
+    "admin": "Admin",
+    "login": "Connexion",
+    "register": "S’inscrire",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "skipToContent": "Aller au contenu principal"
+  },
+  "notifications": {
+    "label": "Notifications",
+    "unreadLabel": "{{count}} notifications non lues",
+    "title": "Notifications",
+    "empty": "Aucune notification. Suivez un article pour recevoir des mises à jour.",
+    "markAllRead": "Tout marquer lu"
+  },
+  "help": {
+    "title": "Aide et FAQ",
+    "description": "Comment Juza fonctionne — comptes, langues, suivi d’articles et contribution.",
+    "stillNeedHelp": "Besoin d’aide encore ?",
+    "contactPrompt": "Écrivez à l’équipe Juza. Nous lisons chaque message.",
+    "contactCta": "Nous contacter",
+    "faqs": [
+      {
+        "q": "Qu’est-ce que Juza ?",
+        "a": "Juza est une plateforme d’information citoyenne pour le Rwanda et l’Afrique de l’Est. Elle explique droits, règles et services publics en langage simple — en anglais, français et kinyarwanda."
+      },
+      {
+        "q": "Faut-il un compte pour lire les articles ?",
+        "a": "Non. Tout le monde peut parcourir et chercher les articles publiés. Un compte permet d’enregistrer des favoris, de suivre des articles, de signaler un problème et de demander à devenir contributeur."
+      },
+      {
+        "q": "Comment changer de langue ?",
+        "a": "Utilisez le sélecteur EN | FR | RW dans l’en-tête. À l’inscription, vous choisissez aussi une langue préférée, qui devient votre défaut."
+      },
+      {
+        "q": "À quoi sert Suivre ?",
+        "a": "Suivre un article vous envoie une notification dans l’application lorsqu’il est publié ou mis à jour. Ouvrez la cloche dans l’en-tête pour lire vos alertes."
+      },
+      {
+        "q": "Comment devenir contributeur ?",
+        "a": "Connectez-vous en tant que citoyen, ouvrez le tableau de bord et envoyez une demande. Un admin l’examine. Les contributeurs rédigent ; les admins publient."
+      },
+      {
+        "q": "Comment signaler une erreur ?",
+        "a": "Ouvrez l’article et utilisez Signaler. Vous pouvez laisser une note. Les admins peuvent répondre dans le même fil."
+      },
+      {
+        "q": "Comment contacter Juza et recevoir une réponse ?",
+        "a": "Utilisez Contact ou Aide. Si vous êtes connecté·e, la réponse apparaît sous Tableau de bord → Mes messages et dans la cloche. Les invité·e·s doivent surveiller leur e-mail."
+      },
+      {
+        "q": "J’ai oublié mon mot de passe. Que faire ?",
+        "a": "Sur la page de connexion, choisissez Mot de passe oublié, entrez votre e-mail et ouvrez le lien de réinitialisation."
+      }
+    ]
+  },
+  "language": {
+    "label": "Langue",
+    "change": "Changer de langue"
+  },
+  "theme": {
+    "toggleLabel": "Changer le thème",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
+  },
+  "home": {
+    "eyebrow": "Connaissez vos droits. Connaissez votre pays.",
+    "title": "Des informations citoyennes claires, dans votre langue.",
+    "subtitle": "Règles, droits et services publics pour la vie quotidienne au Rwanda et en Afrique de l’Est — écrits simplement, libres d’accès.",
+    "ctaBrowse": "Parcourir les thèmes",
+    "ctaSearch": "Rechercher sur Juza",
+    "latestEyebrow": "À lire maintenant",
+    "latestTitle": "Derniers articles",
+    "viewAll": "Voir tout"
+  },
+  "auth": {
+    "account": "Compte",
+    "profile": "Profil",
+    "signIn": "Se connecter",
+    "signInAs": "Se connecter en tant que {{role}}",
+    "signOut": "Se déconnecter",
+    "createAccount": "Créer un compte",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "fullName": "Nom complet",
+    "preferredLanguage": "Langue préférée",
+    "preferredLanguageHint": "Le site s’affichera dans cette langue après l’inscription.",
+    "friend": "ami",
+    "noAccount": "Nouveau sur Juza ?",
+    "adminAccessTitle": "Accès administrateur",
+    "adminAccessHint": "Les admins utilisent la même connexion. Après connexion, ouvrez Admin dans l’en-tête ou le menu du compte.",
+    "adminAccessCta": "Se connecter à l’admin",
+    "haveAccount": "Vous avez déjà un compte ?",
+    "backToLogin": "Retour à la connexion",
+    "passwordHint": "Au moins {{min}} caractères.",
+    "termsNotice": "En créant un compte, vous acceptez les Conditions d’utilisation et la Politique de confidentialité de Juza.",
+    "checkEmailTitle": "Vérifiez votre e-mail",
+    "checkEmailBody": "Nous avons envoyé un lien de confirmation à {{email}}.",
+    "checkEmailHint": "Ouvrez le lien sur cet appareil pour finaliser la création de votre compte.",
+    "forgotPassword": "Mot de passe oublié ?",
+    "forgot": {
+      "title": "Réinitialiser le mot de passe",
+      "description": "Entrez l’e-mail de votre compte. Nous enverrons un lien de réinitialisation.",
+      "submit": "Envoyer le lien",
+      "sentTitle": "Vérifiez votre e-mail",
+      "sentBody": "Si un compte existe pour {{email}}, nous avons envoyé un lien.",
+      "sentHint": "Ouvrez le lien sur cet appareil pour choisir un nouveau mot de passe.",
+      "demoOnly": "La réinitialisation nécessite Supabase. Le mode démo n’envoie pas d’e-mails."
+    },
+    "reset": {
+      "title": "Nouveau mot de passe",
+      "description": "Choisissez un nouveau mot de passe pour votre compte Juza.",
+      "confirm": "Confirmer le mot de passe",
+      "submit": "Mettre à jour",
+      "mismatch": "Les mots de passe ne correspondent pas."
+    },
+    "demoTitle": "Essayez Juza tout de suite",
+    "demoHint": "Deux comptes de démonstration sont prêts — connectez-vous en tant que l’un ou l’autre pour explorer l’application.",
+    "roles": {
+      "citizen": "Citoyen·ne",
+      "contributor": "Contributeur·rice",
+      "admin": "Administrateur·rice"
+    },
+    "roleModel": {
+      "signupTitle": "Vous rejoignez Juza en tant que citoyen·ne.",
+      "citizenTitle": "Comment fonctionnent les rôles sur Juza",
+      "citizen": "Lire tous les articles, enregistrer des favoris, changer de langue. Tout le monde commence ici.",
+      "contributor": "Rédiger et publier des articles. Un·e admin doit valider ce rôle — il ne s’attribue pas soi-même.",
+      "admin": "Gérer les catégories, relire tous les articles, et modifier les rôles des utilisateurs."
+    },
+    "errors": {
+      "missingFields": "Veuillez saisir votre e-mail et votre mot de passe.",
+      "missingName": "Veuillez saisir votre nom.",
+      "missingEmail": "Veuillez saisir votre e-mail.",
+      "badEmail": "Cet e-mail ne semble pas valide.",
+      "shortPassword": "Le mot de passe doit contenir au moins {{min}} caractères.",
+      "missingLanguage": "Veuillez choisir une langue préférée."
+    }
+  },
+  "data": {
+    "errorTitle": "Un problème est survenu lors du chargement.",
+    "loadingCategories": "Chargement des thèmes…",
+    "loadingArticles": "Chargement des articles…",
+    "loadingArticle": "Chargement de l’article…",
+    "loading": "Chargement…"
+  },
+  "contact": {
+    "intro": "Parlez-nous d’un partenariat, d’une question ou d’un retour sur Juza. Les éditeurs lisent chaque message.",
+    "name": "Votre nom",
+    "email": "E-mail",
+    "subject": "Objet",
+    "subjectPlaceholder": "Facultatif",
+    "message": "Message",
+    "submit": "Envoyer",
+    "successTitle": "Message envoyé",
+    "successBody": "Merci — un·e éditeur·rice vous répondra par e-mail à l’adresse indiquée.",
+    "successBodySignedIn": "Merci — quand un·e éditeur·rice répond, vous recevez une notification et pouvez lire la réponse dans Mes messages.",
+    "signedInHint": "Vous êtes connecté·e : les réponses apparaissent dans l’application.",
+    "viewMyMessages": "Mes messages",
+    "sendAnother": "Envoyer un autre message",
+    "reportHint": "Erreur dans un article ? Ouvrez-le et utilisez Signaler, ou parcourez les sujets depuis",
+    "errors": {
+      "incomplete": "Indiquez votre nom, votre e-mail et un court message.",
+      "failed": "Envoi impossible. Réessayez."
+    }
+  },
+  "browse": {
+    "categoryEyebrow": "Thème",
+    "backToAll": "Tous les thèmes",
+    "articleCount_one": "{{count}} article",
+    "articleCount_other": "{{count}} articles",
+    "noArticlesYet": "À venir",
+    "noCategoriesTitle": "Aucun thème pour l’instant",
+    "noCategoriesDescription": "Dès qu’un administrateur ajoute des catégories, elles apparaîtront ici.",
+    "emptyCategoryTitle": "Rien de publié ici pour l’instant, dans votre langue.",
+    "emptyCategoryDescription": "Essayez une autre langue, ou revenez quand des contributeurs auront ajouté des articles à ce thème.",
+    "categoryNotFoundTitle": "Ce thème n’existe pas.",
+    "categoryNotFoundDescription": "Il a peut-être été renommé ou supprimé."
+  },
+  "article": {
+    "readMore": "Lire l’article",
+    "readingTime_one": "{{minutes}} min de lecture",
+    "readingTime_other": "{{minutes}} min de lecture",
+    "byAuthor": "Par {{name}}",
+    "unknownAuthor": "La rédaction de Juza",
+    "availableInOther": "Également disponible en",
+    "readingInLanguage": "Vous lisez cet article en {{language}}.",
+    "readInMyLanguage": "Lire dans ma langue",
+    "notFoundTitle": "Article introuvable.",
+    "notFoundDescription": "L’article que vous cherchez n’est pas publié ou a été déplacé.",
+    "save": "Enregistrer",
+    "saved": "Enregistré",
+    "follow": "Suivre",
+    "following": "Suivi"
+  },
+  "search": {
+    "inputLabel": "Rechercher des articles",
+    "placeholder": "Rechercher des articles, des thèmes, des droits…",
+    "clear": "Effacer",
+    "startTyping": "Commencez à taper pour chercher dans tous les thèmes et toutes les langues.",
+    "resultsFor_one": "{{count}} résultat pour «\u00a0{{query}}\u00a0»",
+    "resultsFor_other": "{{count}} résultats pour «\u00a0{{query}}\u00a0»",
+    "noResultsTitle": "Aucun résultat pour «\u00a0{{query}}\u00a0».",
+    "noResultsDescription": "Essayez un mot plus court, un autre thème, ou une autre langue."
+  },
+  "dashboard": {
+    "greeting": "Bienvenue, {{name}}.",
+    "savedTitle": "Articles enregistrés",
+    "savedEmpty": "Vous n’avez encore rien enregistré.",
+    "savedCount_one": "{{count}} article enregistré.",
+    "savedCount_other": "{{count}} articles enregistrés.",
+    "viewSaved": "Voir les enregistrements",
+    "draftsTitle": "Vos articles",
+    "draftsEmpty": "Vous n’avez encore rien écrit.",
+    "articlesCount": "{{total}} au total · {{drafts}} en brouillon.",
+    "manageArticles": "Gérer les articles",
+    "newTitle": "Écrire un nouvel article",
+    "newDescription": "Rédigez un article, prévisualisez-le et soumettez-le pour qu’un·e éditeur·rice le publie.",
+    "adminTitle": "Outils d’administration",
+    "adminHint": "Gérez les catégories, les articles et les rôles des utilisateurs.",
+    "openAdmin": "Ouvrir l’admin",
+    "messagesEyebrow": "Boîte de réception",
+    "messagesTitle": "Mes messages",
+    "messagesDescription": "Demandes d’aide et de contact que vous avez envoyées, avec les réponses des éditeur·rice·s.",
+    "messagesCardEmpty": "Aucun message de contact pour l’instant.",
+    "messagesCardCount": "{{total}} envoyés · {{replied}} avec une réponse.",
+    "viewMessages": "Voir les messages",
+    "messagesEmptyTitle": "Aucun message",
+    "messagesEmptyDescription": "Quand vous contactez Juza en étant connecté·e, le fil et la réponse apparaissent ici.",
+    "messagesContactCta": "Contacter Juza",
+    "messagesNoSubject": "Sans objet",
+    "messagesStatusOpen": "En attente de réponse",
+    "messagesStatusReplied": "Réponse de l’éditeur·rice",
+    "messagesStatusClosed": "Traité",
+    "messagesAdminReply": "Réponse de l’éditeur·rice",
+    "messagesWaiting": "Pas encore de réponse dans l’app. Vous serez notifié·e quand elle arrivera."
+  },
+  "contribute": {
+    "title": "Demander à devenir contributeur·rice",
+    "description": "Les contributeur·rice·s rédigent et publient des articles citoyens sur Juza. Expliquez à un·e éditeur·rice pourquoi vous seriez un·e bon·ne contributeur·rice. Un·e admin examinera votre demande.",
+    "checking": "Vérification de votre demande…",
+    "reasonLabel": "Pourquoi voulez-vous contribuer\u00a0?",
+    "reasonPlaceholder": "Décrivez brièvement votre parcours, les sujets que vous voulez traiter, et l’intérêt pour les lecteur·rice·s de Juza.",
+    "reasonHint": "Au moins {{min}} caractères. Un langage simple suffit — un·e éditeur·rice vous lit.",
+    "submit": "Envoyer la demande",
+    "pendingTitle": "Votre demande est en cours d’examen.",
+    "pendingBody": "Envoyée le {{date}}. Un·e éditeur·rice prendra une décision bientôt. Impossible de renvoyer une demande tant qu’une est en cours.",
+    "rejectedTitle": "Votre demande n’a pas été approuvée.",
+    "rejectedBody": "Décidée le {{date}}. Vous pouvez revoir votre motivation et réessayer.",
+    "adminNote": "Note de l’éditeur·rice",
+    "reapply": "Refaire une demande",
+    "errors": {
+      "tooShort": "Veuillez écrire au moins {{min}} caractères pour qu’un·e éditeur·rice puisse décider."
+    }
+  },
+  "common": {
+    "cancel": "Annuler"
+  },
+  "myArticles": {
+    "title": "Vos articles",
+    "description": "Brouillons et articles publiés que vous avez écrits.",
+    "newArticle": "Nouvel article",
+    "edit": "Modifier",
+    "updated": "Modifié le {{date}}",
+    "untitled": "Sans titre",
+    "emptyTitle": "Vous n’avez encore rien écrit.",
+    "emptyDescription": "Commencez par un brouillon. Quand il est prêt, soumettez-le pour relecture — un·e éditeur·rice le publiera."
+  },
+  "bookmarks": {
+    "title": "Articles enregistrés",
+    "description": "Tout ce que vous avez enregistré, du plus récent au plus ancien.",
+    "emptyTitle": "Aucun favori pour l’instant",
+    "emptyDescription": "Quand vous trouvez un article à retrouver plus tard, enregistrez-le et il apparaîtra ici."
+  },
+  "editor": {
+    "newTitle": "Nouvel article",
+    "editTitle": "Modifier l’article",
+    "helpText": "Rédigez une langue à la fois. Pour traduire, créez un nouvel article dans une autre langue lié au même sujet.",
+    "tabWrite": "Rédiger",
+    "tabPreview": "Aperçu",
+    "language": "Langue",
+    "category": "Catégorie",
+    "chooseCategory": "Choisir une catégorie",
+    "titleLabel": "Titre",
+    "titlePlaceholder": "Comment obtenir une carte d’identité",
+    "slugLabel": "Slug URL",
+    "slugHint": "Minuscules et tirets uniquement. Utilisé dans l’URL de l’article.",
+    "excerptLabel": "Chapô",
+    "excerptHint": "Une ou deux phrases affichées sur les pages de navigation et de recherche.",
+    "excerptPlaceholder": "Un court résumé qui aide les lecteurs à savoir si c’est ce qu’ils cherchent.",
+    "bodyLabel": "Corps",
+    "bodyPlaceholder": "Écrivez l’article ici. Laissez une ligne vide entre les paragraphes.",
+    "bodyHint": "Texte simple avec des sauts de paragraphe. Rapide sur les connexions lentes.",
+    "saveDraft": "Enregistrer le brouillon",
+    "publish": "Publier",
+    "update": "Mettre à jour",
+    "delete": "Supprimer",
+    "backToMyArticles": "Retour à vos articles",
+    "submitForReview": "Soumettre pour relecture",
+    "reviewSubmittedTitle": "En attente d’un·e éditeur·rice.",
+    "reviewSubmittedBody": "Un·e admin lira cet article. Il·elle le publiera ou vous le renverra avec des notes. Vous ne pouvez pas le modifier pendant la relecture.",
+    "sentBackTitle": "Renvoyé pour corrections",
+    "sentBackBody": "Un·e éditeur·rice vous demande de corriger ceci avant publication\u00a0:",
+    "status": {
+      "draft": "Brouillon",
+      "in_review": "En relecture",
+      "published": "Publié",
+      "archived": "Archivé"
+    },
+    "errors": {
+      "missingTitle": "Veuillez donner un titre à l’article.",
+      "missingSlug": "L’article a besoin d’un slug d’URL.",
+      "missingBody": "Impossible de soumettre un article vide.",
+      "missingCategory": "Choisissez une catégorie avant de soumettre."
+    }
+  },
+  "report": {
+    "open": "Signaler un problème sur cet article",
+    "title": "Signaler cet article",
+    "description": "Dites-nous si quelque chose semble faux, dangereux ou obsolète. Un·e éditeur·rice vérifiera.",
+    "reasonLabel": "Quel est le problème\u00a0?",
+    "reasons": {
+      "wrong_info": "Information fausse ou obsolète",
+      "unsafe": "Conseil dangereux ou nuisible",
+      "spam": "Spam ou hors sujet citoyen",
+      "other": "Autre chose"
+    },
+    "noteLabel": "Plus de détail (facultatif)",
+    "notePlaceholder": "Que devons-nous vérifier\u00a0? Exemple\u00a0: les horaires du bureau d’identité sont faux.",
+    "emailLabel": "Votre e-mail (facultatif)",
+    "emailPlaceholder": "vous@exemple.com",
+    "emailHint": "Seulement si vous voulez un suivi. Vous pouvez laisser ce champ vide.",
+    "submit": "Envoyer le signalement",
+    "thanksTitle": "Merci — nous avons reçu votre signalement.",
+    "thanksBody": "Un·e éditeur·rice examinera cet article. Vous n’avez rien d’autre à faire.",
+    "threadTitle": "Conversation",
+    "threadEmpty": "Pas encore de réponses.",
+    "threadAdmin": "Éditeur·rice",
+    "threadReporter": "Lecteur·rice",
+    "replyLabel": "Votre réponse",
+    "replyAdminPlaceholder": "Répondre au lecteur…",
+    "replyReporterPlaceholder": "Ajouter un détail pour les éditeurs…",
+    "replySubmit": "Envoyer",
+    "articlePanelAdminTitle": "Signalements sur cet article",
+    "articlePanelAdminHint": "Consultez chaque signalement et répondez dans le fil.",
+    "articlePanelMyTitle": "Vos signalements sur cet article",
+    "articlePanelMyHint": "Les éditeurs peuvent répondre ici. Vous pouvez ajouter des précisions."
+  },
+  "admin": {
+    "eyebrow": "Contrôle éditorial",
+    "title": "Admin",
+    "description": "Gérez les catégories, les articles et les rôles des utilisateurs.",
+    "backToOverview": "Retour à l’admin",
+    "categoriesTitle": "Catégories",
+    "categoriesDescription": "La taxonomie des thèmes qui structurent Juza.",
+    "articlesTitle": "Articles",
+    "articlesDescription": "Tout ce qui a été écrit sur Juza, tous auteurs et toutes langues confondus.",
+    "usersTitle": "Utilisateurs",
+    "usersDescription": "Tous les comptes de Juza, avec leur rôle.",
+    "requestsTitle": "Demandes de contribution",
+    "requestsDescription": "Citoyen·ne·s qui ont demandé un accès contributeur·rice. Approuvez ou refusez avec un mot d’explication.",
+    "requestTabs": {
+      "pending": "En attente",
+      "approved": "Approuvées",
+      "rejected": "Refusées"
+    },
+    "requestsEmpty": {
+      "pending": "Aucune demande en attente. Quand un·e citoyen·ne postule, elle apparaîtra ici.",
+      "approved": "Aucune demande approuvée pour l’instant.",
+      "rejected": "Aucune demande refusée."
+    },
+    "approve": "Approuver",
+    "reject": "Refuser",
+    "confirmReject": "Envoyer le refus",
+    "rejectNoteLabel": "Motif (visible par le·la demandeur·euse)",
+    "rejectNotePlaceholder": "Une ou deux phrases. Soyez bienveillant·e — cette personne veut aider.",
+    "unknownApplicant": "Demandeur·euse inconnu·e",
+    "requestSubmitted": "Envoyée le {{date}}",
+    "sendBack": "Renvoyer",
+    "confirmSendBack": "Renvoyer à l’auteur·rice",
+    "sendBackNoteLabel": "Que doit corriger l’auteur·rice\u00a0?",
+    "sendBackNotePlaceholder": "Soyez clair·e et bienveillant·e. Exemple\u00a0: ajoutez la source des horaires du secteur.",
+    "reportsTitle": "Signalements lecteurs",
+    "reportsDescription": "Problèmes signalés sur des articles publiés. Ignorer ou retirer l’article.",
+    "messagesTitle": "Messages de contact",
+    "messagesDescription": "Répondez ici pour notifier les citoyen·ne·s connecté·e·s. Pour les invité·e·s, utilisez aussi l’e-mail.",
+    "messagesEmpty": "Aucun message dans cette vue.",
+    "messagesClose": "Marquer comme traité",
+    "messagesArchive": "Archiver sans réponse",
+    "messagesReopen": "Rouvrir",
+    "messagesReplyLabel": "Votre réponse",
+    "messagesReplyPlaceholder": "Écrivez une réponse claire que le·la citoyen·ne verra dans l’app (s’il·elle a un compte).",
+    "messagesSendReply": "Enregistrer la réponse",
+    "messagesSendReplyNotify": "Envoyer et notifier",
+    "messagesReplyTooShort": "Écrivez au moins une courte réponse.",
+    "messagesReplyFailed": "Envoi impossible. Réessayez.",
+    "messagesYourReply": "Votre réponse",
+    "messagesLinkedAccount": "Compte Juza lié — la réponse les notifie dans l’app.",
+    "messagesGuestHint": "Invité·e (pas de compte) — la réponse est enregistrée ; écrivez-leur aussi par e-mail.",
+    "messagesEmailSubject": "Réponse de Juza",
+    "messagesFilter": {
+      "open": "Ouverts",
+      "closed": "Traités",
+      "all": "Tous"
+    },
+    "reportTabs": {
+      "open": "Ouverts",
+      "resolved": "Résolus",
+      "dismissed": "Ignorés"
+    },
+    "reportsEmpty": {
+      "open": "Aucun signalement ouvert. Quand un·e lecteur·rice signale un article, il apparaîtra ici.",
+      "resolved": "Aucun signalement résolu pour l’instant.",
+      "dismissed": "Aucun signalement ignoré."
+    },
+    "dismissReport": "Ignorer",
+    "unpublishArticle": "Dépublier l’article",
+    "unpublishDefaultReason": "Retiré après un signalement lecteur. Vérifiez les faits et soumettez à nouveau.",
+    "unknownArticle": "Article supprimé",
+    "reportFiled": "Signalé le {{date}}",
+    "existingCategories": "Catégories existantes",
+    "addCategory": "Ajouter ou mettre à jour une catégorie",
+    "name": "Nom",
+    "slug": "Slug",
+    "saveCategory": "Enregistrer la catégorie",
+    "delete": "Supprimer",
+    "confirmDeleteCategory": "Supprimer cette catégorie\u00a0? Les articles conserveront leur contenu mais perdront leur catégorie.",
+    "confirmDeleteArticle": "Supprimer cet article\u00a0? Cette action est irréversible en mode démo.",
+    "role": "Rôle",
+    "you": "vous",
+    "joined": "Inscrit le {{date}}",
+    "noArticlesForFilter": "Aucun article ne correspond à ce filtre.",
+    "filter": {
+      "all": "Tous",
+      "in_review": "En relecture",
+      "draft": "Brouillons",
+      "published": "Publiés",
+      "archived": "Archivés"
+    },
+    "errors": {
+      "missingFields": "Veuillez remplir le nom dans les trois langues et le slug."
+    }
+  },
+  "pages": {
+    "browse": {
+      "title": "Parcourir les thèmes",
+      "description": "Informations citoyennes classées par catégorie."
+    },
+    "article": {
+      "title": "Article",
+      "description": "Informations citoyennes détaillées."
+    },
+    "search": {
+      "title": "Rechercher",
+      "description": "Trouvez des articles dans toutes les catégories et langues."
+    },
+    "login": {
+      "title": "Connexion",
+      "description": "Bon retour."
+    },
+    "register": {
+      "title": "Créez votre compte",
+      "description": "Rejoignez Juza pour enregistrer des articles et, si vous le souhaitez, contribuer."
+    },
+    "dashboard": {
+      "title": "Tableau de bord",
+      "description": "Vos favoris et brouillons."
+    },
+    "notFound": {
+      "title": "Page introuvable",
+      "description": "La page que vous cherchez n’existe pas ou a été déplacée.",
+      "backHome": "Retour à l’accueil"
+    }
+  },
+  "footer": {
+    "about": "À propos",
+    "contact": "Contact",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "rights": "Tous droits réservés.",
+    "builtWith": "Conçu pour un accès libre au savoir citoyen."
+  },
+  "static": {
+    "about": {
+      "title": "À propos de Juza",
+      "description": "Un savoir citoyen clair pour le Rwanda et l’Afrique de l’Est.",
+      "body": [
+        "Juza rassemble les règles, les droits et les services publics du quotidien — écrits simplement, en anglais, français et kinyarwanda.",
+        "Les citoyens lisent et enregistrent librement. Les contributeurs rédigent des contenus relus. Les administrateurs veillent à la fiabilité.",
+        "Notre but est simple : chacun doit pouvoir comprendre comment fonctionne son pays."
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Nous lisons chaque message.",
+      "body": [
+        "Pour toute question sur le contenu, les partenariats ou la contribution, écrivez à hello@juza.local.",
+        "Si vous repérez une erreur, utilisez le bouton de signalement sur l’article — il arrive directement aux éditeurs."
+      ]
+    },
+    "privacy": {
+      "title": "Confidentialité",
+      "description": "Comment Juza traite vos informations.",
+      "body": [
+        "Nous collectons seulement ce qu’il faut pour votre compte : nom, e-mail, favoris et brouillons.",
+        "Nous ne vendons pas de données personnelles. Les sessions servent à vous connecter et à protéger la plateforme.",
+        "Vous pouvez demander la suppression de votre compte. En mode démo, les données restent dans votre navigateur."
+      ]
+    },
+    "terms": {
+      "title": "Conditions d’utilisation",
+      "description": "Un accord court pour utiliser Juza.",
+      "body": [
+        "Juza fournit des informations citoyennes pour apprendre et décider au quotidien. Ce n’est pas un conseil juridique officiel.",
+        "Les contributeurs s’engagent à fournir des informations exactes et à respecter le processus de relecture.",
+        "Tout abus — spam, harcèlement ou désinformation — peut entraîner une suspension du compte."
+      ]
+    }
+  }
+}

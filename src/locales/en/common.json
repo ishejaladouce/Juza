@@ -1,0 +1,617 @@
+{
+  "brand": {
+    "name": "Juza",
+    "tagline": "Civic information for everyone."
+  },
+  "nav": {
+    "home": "Home",
+    "browse": "Browse",
+    "search": "Search",
+    "help": "Help",
+    "dashboard": "Dashboard",
+    "admin": "Admin",
+    "login": "Log in",
+    "register": "Sign up",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to main content"
+  },
+  "notifications": {
+    "label": "Notifications",
+    "unreadLabel": "{{count}} unread notifications",
+    "title": "Notifications",
+    "empty": "No notifications yet. Follow an article to get updates.",
+    "markAllRead": "Mark all read"
+  },
+  "help": {
+    "title": "Help & FAQ",
+    "description": "Accounts, languages, following articles, and contributing.",
+    "stillNeedHelp": "Still need help?",
+    "contactPrompt": "Contact the Juza team with your question.",
+    "contactCta": "Contact us",
+    "faqs": [
+      {
+        "q": "What is Juza?",
+        "a": "Juza is a civic information platform for Rwanda and East Africa. It explains rights, rules, and public services in plain language — in English, French, and Kinyarwanda."
+      },
+      {
+        "q": "Do I need an account to read articles?",
+        "a": "No. Anyone can browse and search. An account lets you bookmark, follow articles, report problems, and apply to contribute."
+      },
+      {
+        "q": "How do I change the language?",
+        "a": "Use EN | FR | RW in the header. At signup you also choose a preferred language as your default."
+      },
+      {
+        "q": "What does Follow do?",
+        "a": "You get an in-app alert when that article is published or updated. Open the bell in the header to read alerts."
+      },
+      {
+        "q": "How do I become a contributor?",
+        "a": "Sign in, open your dashboard, and submit a contributor request. An admin reviews it. Contributors draft articles; admins approve what goes live."
+      },
+      {
+        "q": "How do I report a mistake?",
+        "a": "Open the article and use Report. Admins can reply on the same thread."
+      },
+      {
+        "q": "How do I contact Juza and get a reply?",
+        "a": "Use Contact or Help. If you’re signed in, replies appear under Dashboard → My messages and in the notification bell. Guests should check email."
+      },
+      {
+        "q": "I forgot my password. What now?",
+        "a": "On the login page, choose Forgot password, enter your email, open the reset link, then set a new password."
+      }
+    ]
+  },
+  "language": {
+    "label": "Language",
+    "change": "Change language"
+  },
+  "theme": {
+    "toggleLabel": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "home": {
+    "eyebrow": "Know your rights. Know your country.",
+    "title": "Clear civic information, in your language.",
+    "subtitle": "Rules, rights, and public services for everyday life in Rwanda and East Africa — plain language, free to read.",
+    "ctaBrowse": "Browse topics",
+    "ctaSearch": "Search Juza",
+    "latestEyebrow": "New",
+    "latestTitle": "Latest articles",
+    "viewAll": "View all"
+  },
+  "auth": {
+    "account": "Account",
+    "profile": "Profile",
+    "signIn": "Sign in",
+    "signInAs": "Sign in as {{role}}",
+    "signOut": "Sign out",
+    "createAccount": "Create account",
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Full name",
+    "preferredLanguage": "Preferred language",
+    "preferredLanguageHint": "The site opens in this language after you sign up.",
+    "friend": "friend",
+    "noAccount": "New to Juza?",
+    "adminAccessTitle": "Admin access",
+    "adminAccessHint": "Admins use the same sign-in. After login, open Admin from the header or account menu.",
+    "adminAccessCta": "Sign in to admin",
+    "haveAccount": "Already have an account?",
+    "backToLogin": "Back to sign in",
+    "passwordHint": "At least {{min}} characters.",
+    "termsNotice": "By creating an account you agree to Juza’s Terms of Use and Privacy Policy.",
+    "checkEmailTitle": "Check your email",
+    "checkEmailBody": "We sent a confirmation link to {{email}}.",
+    "checkEmailHint": "Open the link on this device to finish setting up your account.",
+    "forgotPassword": "Forgot password?",
+    "forgot": {
+      "title": "Reset your password",
+      "description": "Enter the email on your account. We’ll send a reset link.",
+      "submit": "Send reset link",
+      "sentTitle": "Check your email",
+      "sentBody": "If an account exists for {{email}}, we sent a reset link.",
+      "sentHint": "Open the link on this device to choose a new password.",
+      "demoOnly": "Password reset needs live Supabase. Demo mode has no email delivery."
+    },
+    "reset": {
+      "title": "Choose a new password",
+      "description": "Enter a new password for your Juza account.",
+      "confirm": "Confirm password",
+      "submit": "Update password",
+      "mismatch": "Passwords don’t match."
+    },
+    "demoTitle": "Try Juza instantly",
+    "demoHint": "Use a demo account to explore Juza.",
+    "roles": {
+      "citizen": "Citizen",
+      "contributor": "Contributor",
+      "admin": "Admin"
+    },
+    "roleModel": {
+      "signupTitle": "You’ll join as a citizen.",
+      "citizenTitle": "How roles work on Juza",
+      "citizen": "Read articles, save bookmarks, and switch languages. Everyone starts here.",
+      "contributor": "Write and publish articles. An admin must approve this role.",
+      "admin": "Manage categories, review articles, and change user roles."
+    },
+    "errors": {
+      "missingFields": "Please enter your email and password.",
+      "missingName": "Please enter your name.",
+      "missingEmail": "Please enter your email.",
+      "badEmail": "That doesn’t look like a valid email.",
+      "shortPassword": "Password must be at least {{min}} characters.",
+      "missingLanguage": "Please choose a preferred language."
+    }
+  },
+  "data": {
+    "errorTitle": "Something went wrong loading this.",
+    "loadingCategories": "Loading topics…",
+    "loadingArticles": "Loading articles…",
+    "loadingArticle": "Loading article…",
+    "loading": "Loading…"
+  },
+  "contact": {
+    "intro": "Send a partnership idea, question, or feedback.",
+    "name": "Your name",
+    "email": "Email",
+    "subject": "Subject",
+    "subjectPlaceholder": "Optional",
+    "message": "Message",
+    "submit": "Send message",
+    "successTitle": "Message sent",
+    "successBody": "Thanks — an editor will reply by email to the address you gave.",
+    "successBodySignedIn": "Thanks — when an editor replies, you’ll get a notification and can read it under My messages.",
+    "signedInHint": "You’re signed in, so replies show up in the app.",
+    "viewMyMessages": "My messages",
+    "sendAnother": "Send another message",
+    "reportHint": "Found a mistake in an article? Open it and use Report, or browse topics from",
+    "errors": {
+      "incomplete": "Please fill in your name, email, and a short message.",
+      "failed": "Could not send your message. Try again."
+    }
+  },
+  "browse": {
+    "categoryEyebrow": "Topic",
+    "backToAll": "All topics",
+    "articleCount_one": "{{count}} article",
+    "articleCount_other": "{{count}} articles",
+    "noArticlesYet": "Coming soon",
+    "noCategoriesTitle": "No topics yet",
+    "noCategoriesDescription": "Once an admin adds categories, they’ll appear here.",
+    "emptyCategoryTitle": "Nothing published here yet, in your language.",
+    "emptyCategoryDescription": "Check another language, or come back once contributors have added articles to this topic.",
+    "categoryNotFoundTitle": "That topic doesn’t exist.",
+    "categoryNotFoundDescription": "It may have been renamed or removed."
+  },
+  "article": {
+    "readMore": "Read article",
+    "readingTime_one": "{{minutes}} min read",
+    "readingTime_other": "{{minutes}} min read",
+    "byAuthor": "By {{name}}",
+    "unknownAuthor": "Juza editors",
+    "availableInOther": "Also available in",
+    "readingInLanguage": "You’re reading this in {{language}}.",
+    "readInMyLanguage": "Read in my language",
+    "notFoundTitle": "Article not found.",
+    "notFoundDescription": "The article you’re looking for isn’t published or has been moved.",
+    "save": "Save",
+    "saved": "Saved",
+    "follow": "Follow",
+    "following": "Following",
+    "updated": "Updated {{date}}"
+  },
+  "search": {
+    "inputLabel": "Search articles",
+    "placeholder": "Search articles, topics, rights…",
+    "clear": "Clear",
+    "startTyping": "Type any word from a topic — title, summary, body, or category. Results include EN, FR, and RW.",
+    "resultsFor_one": "{{count}} result for “{{query}}”",
+    "resultsFor_other": "{{count}} results for “{{query}}”",
+    "noResultsTitle": "No results for “{{query}}”.",
+    "noResultsDescription": "Try another topic word, like ID, election, wage, or land."
+  },
+  "dashboard": {
+    "greeting": "Welcome, {{name}}.",
+    "savedTitle": "Saved articles",
+    "savedEmpty": "You haven’t bookmarked anything yet.",
+    "savedCount_one": "{{count}} article you saved.",
+    "savedCount_other": "{{count}} articles you saved.",
+    "viewSaved": "See saved",
+    "draftsTitle": "Your articles",
+    "draftsEmpty": "You haven’t written anything yet.",
+    "articlesCount": "{{total}} total · {{drafts}} in draft.",
+    "manageArticles": "Manage articles",
+    "newTitle": "Write something new",
+    "newDescription": "Draft an article, preview it, and submit it for an editor to publish.",
+    "adminTitle": "Admin tools",
+    "adminHint": "Manage categories, review articles, and change user roles.",
+    "openAdmin": "Open admin",
+    "messagesEyebrow": "Inbox",
+    "messagesTitle": "My messages",
+    "messagesDescription": "Help and contact requests you sent, plus replies from editors.",
+    "messagesCardEmpty": "No contact messages yet.",
+    "messagesCardCount": "{{total}} sent · {{replied}} with a reply.",
+    "viewMessages": "Open messages",
+    "messagesEmptyTitle": "No messages yet",
+    "messagesEmptyDescription": "When you contact Juza while signed in, your thread and any reply appear here.",
+    "messagesContactCta": "Contact Juza",
+    "messagesNoSubject": "No subject",
+    "messagesStatusOpen": "Waiting for a reply",
+    "messagesStatusReplied": "Editor replied",
+    "messagesStatusClosed": "Closed",
+    "messagesAdminReply": "Editor reply",
+    "messagesWaiting": "An editor hasn’t replied in the app yet. You’ll get a notification when they do.",
+    "feedbackCardTitle": "My feedback",
+    "feedbackCardEmpty": "No flags or questions yet.",
+    "feedbackCardHint": "See status and replies on articles you flagged or asked about.",
+    "viewFeedback": "Open feedback"
+  },
+  "ask": {
+    "open": "Ask a question",
+    "title": "Ask about this article",
+    "hint": "Editors will review your question and can reply in the report thread.",
+    "email": "Your email",
+    "question": "Your question",
+    "submit": "Send question",
+    "cancel": "Cancel",
+    "tooShort": "Please write a bit more so editors understand your question.",
+    "thanksTitle": "Question sent",
+    "thanksBody": "You can track the status under Dashboard → My feedback."
+  },
+  "feedback": {
+    "eyebrow": "Your reports",
+    "title": "My feedback",
+    "description": "Flags and questions you submitted, and any editor replies.",
+    "emptyTitle": "Nothing here yet",
+    "emptyDescription": "When you flag an article or ask a question, it will show up here with its status.",
+    "unknownArticle": "Article unavailable",
+    "kindQuestion": "Question",
+    "kindFlag": "Flag",
+    "status": {
+      "open": "Under review",
+      "resolved": "Resolved",
+      "dismissed": "Dismissed"
+    },
+    "replies": "Editor replies",
+    "waiting": "No reply yet — an editor will review this.",
+    "viewArticle": "Open article"
+  },
+  "settings": {
+    "eyebrow": "Account",
+    "title": "Settings",
+    "description": "Language preference and optional email alerts for followed articles.",
+    "language": "Preferred language",
+    "languageHint": "Used as your default language in Juza.",
+    "emailNotifications": "Email me when followed articles update",
+    "emailNotificationsHint": "In-app alerts always work. Email needs mail setup.",
+    "save": "Save settings",
+    "saved": "Settings saved."
+  },
+  "onboarding": {
+    "eyebrow": "Step {{step}} of {{total}}",
+    "next": "Next",
+    "skip": "Skip for now",
+    "done": "Got it",
+    "browse": "Browse topics",
+    "steps": {
+      "search": {
+        "title": "Find what you need",
+        "body": "Use Search or Browse to find civic information in your language."
+      },
+      "follow": {
+        "title": "Follow articles that matter",
+        "body": "Open an article and tap Follow. You’ll get an alert when it is updated."
+      },
+      "feedback": {
+        "title": "Flag problems or ask questions",
+        "body": "Report mistakes, or ask a question on the article. Track replies under My feedback."
+      },
+      "language": {
+        "title": "Switch language anytime",
+        "body": "Use EN | FR | RW in the header. Change your default in Settings."
+      }
+    }
+  },
+  "contribute": {
+    "title": "Apply to become a contributor",
+    "description": "Contributors write civic articles on Juza. Tell an editor why you want to contribute. An admin will review your request.",
+    "checking": "Checking your request…",
+    "reasonLabel": "Why do you want to contribute?",
+    "reasonPlaceholder": "Your background, topics you want to write, and why.",
+    "reasonHint": "At least {{min}} characters. An editor reads this.",
+    "submit": "Send request",
+    "pendingTitle": "Your request is under review.",
+    "pendingBody": "Submitted {{date}}. You can’t apply again while a request is pending.",
+    "rejectedTitle": "Your request wasn’t approved.",
+    "rejectedBody": "Decided {{date}}. You can update your reason and try again.",
+    "adminNote": "Editor’s note",
+    "reapply": "Apply again",
+    "errors": {
+      "tooShort": "Please write at least {{min}} characters so an editor can decide."
+    }
+  },
+  "common": {
+    "cancel": "Cancel"
+  },
+  "myArticles": {
+    "title": "Your articles",
+    "description": "Drafts and published pieces you’ve authored.",
+    "newArticle": "New article",
+    "edit": "Edit",
+    "updated": "Updated {{date}}",
+    "untitled": "Untitled",
+    "emptyTitle": "You haven’t written anything yet.",
+    "emptyDescription": "Start with a draft. When it’s ready, submit it for review — an editor will publish it."
+  },
+  "bookmarks": {
+    "title": "Saved articles",
+    "description": "Everything you’ve bookmarked, most recent first.",
+    "emptyTitle": "No bookmarks yet",
+    "emptyDescription": "When you find an article you want to return to, save it and it will appear here."
+  },
+  "editor": {
+    "newTitle": "New article",
+    "editTitle": "Edit article",
+    "helpText": "Write in one language at a time. To translate, create a new article in another language linked to the same topic.",
+    "tabWrite": "Write",
+    "tabPreview": "Preview",
+    "language": "Language",
+    "category": "Category",
+    "chooseCategory": "Choose a category",
+    "titleLabel": "Title",
+    "titlePlaceholder": "How to get a national ID",
+    "slugLabel": "URL slug",
+    "slugHint": "Lowercase, dashes only. Used in the article URL.",
+    "excerptLabel": "Excerpt",
+    "excerptHint": "One or two sentences shown on the browse and search pages.",
+    "excerptPlaceholder": "A short summary that helps readers decide if this is what they need.",
+    "bodyLabel": "Body",
+    "bodyPlaceholder": "Write the article here. Leave a blank line between paragraphs.",
+    "bodyHint": "Plain text with paragraph breaks. Simple and fast on slow connections.",
+    "saveDraft": "Save draft",
+    "publish": "Publish",
+    "update": "Update",
+    "delete": "Delete",
+    "backToMyArticles": "Back to your articles",
+    "submitForReview": "Submit for review",
+    "reviewSubmittedTitle": "Waiting for an editor.",
+    "reviewSubmittedBody": "An editor will publish it or send it back. You can’t edit it during review.",
+    "sentBackTitle": "Sent back for changes",
+    "sentBackBody": "An editor asked you to fix something before this can go live:",
+    "status": {
+      "draft": "Draft",
+      "in_review": "In review",
+      "published": "Published",
+      "archived": "Archived"
+    },
+    "errors": {
+      "missingTitle": "Please give the article a title.",
+      "missingSlug": "The article needs a URL slug.",
+      "missingBody": "You can’t submit an article with an empty body.",
+      "missingCategory": "Pick a category before submitting."
+    }
+  },
+  "report": {
+    "open": "Report a problem with this article",
+    "title": "Report this article",
+    "description": "Tell us if something looks wrong, unsafe, or out of date. An editor will check it.",
+    "reasonLabel": "What’s wrong?",
+    "reasons": {
+      "wrong_info": "Wrong or out-of-date information",
+      "unsafe": "Unsafe or harmful advice",
+      "spam": "Spam or not civic information",
+      "other": "Something else",
+      "question": "Question about this article"
+    },
+    "noteLabel": "More detail (optional)",
+    "notePlaceholder": "What should we check? For example: the ID office hours are wrong.",
+    "emailLabel": "Your email (optional)",
+    "emailPlaceholder": "you@example.com",
+    "emailHint": "Only if you want us to follow up. You can leave this blank.",
+    "submit": "Send report",
+    "thanksTitle": "Thank you — we got your report.",
+    "thanksBody": "An editor will look at this article. You don’t need to do anything else.",
+    "threadTitle": "Conversation",
+    "threadEmpty": "No replies yet.",
+    "threadAdmin": "Editor",
+    "threadReporter": "Reporter",
+    "replyLabel": "Your reply",
+    "replyAdminPlaceholder": "Reply to the reporter…",
+    "replyReporterPlaceholder": "Add more detail for the editors…",
+    "replySubmit": "Send reply",
+    "articlePanelAdminTitle": "Reports on this article",
+    "articlePanelAdminHint": "Review every reader report and reply in the thread.",
+    "articlePanelMyTitle": "Your reports on this article",
+    "articlePanelMyHint": "Editors can reply here. You can add more detail anytime."
+  },
+  "admin": {
+    "eyebrow": "Editorial control",
+    "title": "Admin",
+    "description": "Manage categories, articles, and user roles.",
+    "backToOverview": "Back to admin",
+    "categoriesTitle": "Categories",
+    "categoriesDescription": "The taxonomy of topics that organise Juza.",
+    "articlesTitle": "Articles",
+    "articlesDescription": "Everything written on Juza, across all authors and languages.",
+    "usersTitle": "Users",
+    "usersDescription": "View accounts, change roles, suspend or remove users.",
+    "accountSuspended": "Suspended",
+    "suspendAccount": "Suspend",
+    "restoreAccount": "Restore",
+    "removeAccount": "Remove",
+    "confirmRemoveAccount": "Remove this account from Juza? They will no longer be able to sign in.",
+    "activityTitle": "Platform activity",
+    "activityDescription": "Recent articles in review, open reports, contributor requests, and contact messages.",
+    "activityEmpty": "Nothing pending right now.",
+    "activityKind": {
+      "article": "Article in review",
+      "report": "Flagged content",
+      "request": "Contributor request",
+      "message": "Contact message"
+    },
+    "requestsTitle": "Contributor requests",
+    "requestsDescription": "Citizens who applied for contributor access. Approve or reject with a note.",
+    "requestTabs": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "requestsEmpty": {
+      "pending": "No pending requests. When a citizen applies, they’ll appear here.",
+      "approved": "No approved requests yet.",
+      "rejected": "No rejected requests."
+    },
+    "approve": "Approve",
+    "reject": "Reject",
+    "confirmReject": "Send rejection",
+    "rejectNoteLabel": "Reason (shown to the applicant)",
+    "rejectNotePlaceholder": "Brief reason for the applicant.",
+    "unknownApplicant": "Unknown applicant",
+    "requestSubmitted": "Submitted {{date}}",
+    "sendBack": "Send back",
+    "confirmSendBack": "Send back to author",
+    "sendBackNoteLabel": "What should the author fix?",
+    "sendBackNotePlaceholder": "Be clear and kind. Example: Please add the source for the sector office hours.",
+    "reportsTitle": "Reader reports",
+    "reportsDescription": "Problems readers flagged on live articles. Reply in the thread, dismiss, or take the article offline.",
+    "messagesTitle": "Contact messages",
+    "messagesDescription": "Reply to notify signed-in users. Email guests separately.",
+    "messagesEmpty": "No messages in this view.",
+    "messagesClose": "Mark as closed",
+    "messagesArchive": "Archive without reply",
+    "messagesReopen": "Reopen",
+    "messagesReplyLabel": "Your reply",
+    "messagesReplyPlaceholder": "Write a clear reply the citizen will see in the app (if they have an account).",
+    "messagesSendReply": "Save reply",
+    "messagesSendReplyNotify": "Send reply & notify",
+    "messagesReplyTooShort": "Write at least a short reply.",
+    "messagesReplyFailed": "Could not send the reply. Try again.",
+    "messagesYourReply": "Your reply",
+    "messagesLinkedAccount": "Linked Juza account — reply notifies them in-app.",
+    "messagesGuestHint": "Guest (no account) — reply is stored; also email them with the link above.",
+    "messagesEmailSubject": "Reply from Juza",
+    "messagesFilter": {
+      "open": "Open",
+      "closed": "Closed",
+      "all": "All"
+    },
+    "reportTabs": {
+      "open": "Open",
+      "resolved": "Resolved",
+      "dismissed": "Dismissed"
+    },
+    "reportsEmpty": {
+      "open": "No open reports. When a reader flags an article, it will show up here.",
+      "resolved": "No resolved reports yet.",
+      "dismissed": "No dismissed reports."
+    },
+    "dismissReport": "Dismiss",
+    "unpublishArticle": "Unpublish article",
+    "unpublishDefaultReason": "Taken offline after a reader report. Please check the facts and resubmit.",
+    "unknownArticle": "Article removed",
+    "reportFiled": "Reported {{date}}",
+    "existingCategories": "Existing categories",
+    "addCategory": "Add or update a category",
+    "name": "Name",
+    "slug": "Slug",
+    "saveCategory": "Save category",
+    "delete": "Delete",
+    "confirmDeleteCategory": "Delete this category? Articles will keep their content but lose their category.",
+    "confirmDeleteArticle": "Delete this article? This can’t be undone in demo mode.",
+    "role": "Role",
+    "you": "you",
+    "joined": "Joined {{date}}",
+    "noArticlesForFilter": "No articles match this filter.",
+    "filter": {
+      "all": "All",
+      "in_review": "In review",
+      "draft": "Drafts",
+      "published": "Published",
+      "archived": "Archived"
+    },
+    "errors": {
+      "missingFields": "Please fill in name in all three languages, plus the slug."
+    }
+  },
+  "pages": {
+    "browse": {
+      "title": "Browse topics",
+      "description": "Civic information organized by category."
+    },
+    "article": {
+      "title": "Article",
+      "description": "Detailed civic information."
+    },
+    "search": {
+      "title": "Search",
+      "description": "Find articles in any language by topic words."
+    },
+    "login": {
+      "title": "Log in",
+      "description": "Welcome back."
+    },
+    "register": {
+      "title": "Create your account",
+      "description": "Join Juza to save articles and, if you want, contribute."
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "description": "Your bookmarks and drafts."
+    },
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you’re looking for doesn’t exist or has moved.",
+      "backHome": "Back to home"
+    }
+  },
+  "footer": {
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "rights": "All rights reserved.",
+    "builtWith": "Built for open access to civic knowledge."
+  },
+  "static": {
+    "about": {
+      "title": "About Juza",
+      "description": "Clear civic knowledge for Rwanda and East Africa.",
+      "body": [
+        "Juza explains rules, rights, and public services in plain language — in English, French, and Kinyarwanda.",
+        "Citizens can read and bookmark articles. Contributors write reviewed content. Admins keep the library accurate.",
+        "Our goal is simple: everyone should understand how their country works."
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Send a message to the Juza team.",
+      "body": [
+        "Use this form for partnerships, questions, or feedback.",
+        "To report an article error, use the report button on that article."
+      ]
+    },
+    "privacy": {
+      "title": "Privacy",
+      "description": "How Juza handles your information.",
+      "body": [
+        "We collect only what we need to run your account: name, email, and the bookmarks or drafts you create.",
+        "We do not sell personal data. Session information is used to keep you signed in and to protect the platform.",
+        "You can request account deletion by contacting us. Demo mode stores data only in your browser."
+      ]
+    },
+    "terms": {
+      "title": "Terms of use",
+      "description": "A short agreement for using Juza.",
+      "body": [
+        "Juza provides civic information for learning and everyday decisions. It is not a substitute for official legal advice.",
+        "Contributors agree to submit accurate information and respect the review process before publishing.",
+        "Misuse of the platform — including spam, harassment, or deliberate misinformation — may lead to account suspension."
+      ]
+    }
+  }
+}

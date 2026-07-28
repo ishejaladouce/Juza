@@ -1,0 +1,531 @@
+{
+  "brand": {
+    "name": "Juza",
+    "tagline": "Amakuru y’abaturage kuri buri wese."
+  },
+  "nav": {
+    "home": "Ahabanza",
+    "browse": "Reba",
+    "search": "Shakisha",
+    "help": "Ubufasha",
+    "dashboard": "Ikibaho",
+    "admin": "Ubuyobozi",
+    "login": "Injira",
+    "register": "Iyandikishe",
+    "openMenu": "Fungura menu",
+    "closeMenu": "Funga menu",
+    "skipToContent": "Simbukira ku birimo"
+  },
+  "notifications": {
+    "label": "Amatangazo",
+    "unreadLabel": "Amatangazo {{count}} atarasomwa",
+    "title": "Amatangazo",
+    "empty": "Nta matangazo. Kurikira inyandiko kugira ngo ubone amakuru mashya.",
+    "markAllRead": "Menya byose nk'ibisomwe"
+  },
+  "help": {
+    "title": "Ubufasha n’ibibazo",
+    "description": "Uko Juza ikora — konti, indimi, gukurikira inyandiko n’ubwitabire.",
+    "stillNeedHelp": "Uracyakeneye ubufasha?",
+    "contactPrompt": "Ohereza ubutumwa ku itsinda rya Juza. Dusoma buri butumwa.",
+    "contactCta": "Twandikire",
+    "faqs": [
+      {
+        "q": "Juza ni iki?",
+        "a": "Juza ni urubuga rw’amakuru y’abaturage mu Rwanda n’Afurika y’Iburasirazuba. Risobanura uburenganzira, amategeko n’serivisi za leta mu magambo yoroshye — mu Cyongereza, Igifaransa n’Ikinyarwanda."
+      },
+      {
+        "q": "Ngombwa konti kugira ngo nsome inyandiko?",
+        "a": "Oya. Uwo ari we wese ashobora gusoma no gushakisha inyandiko zasohotse. Konti ikureka ubike, gukurikira inyandiko, gutanga ikirego, no gusaba kuba umwanditsi."
+      },
+      {
+        "q": "Nigute nahindura ururimi?",
+        "a": "Koresha EN | FR | RW mu mutwe. Iyo uyandikisha uhita uhitamo ururimi ukunda, kandi rukaba urwawe."
+      },
+      {
+        "q": "Gukurikira bikora iki?",
+        "a": "Gukurikira inyandiko bituma uhabwa itangazo mu porogaramu iyo yasohotse cyangwa ihinduwe. Fungura inzogera mu mutwe usome amatangazo yawe."
+      },
+      {
+        "q": "Nigute naba umwanditsi?",
+        "a": "Injira nk’umuturage, fungura ikibaho, uhereze icyifuzo. Umuyobozi arabisuzuma. Abanditsi bandika; abayobozi basohora."
+      },
+      {
+        "q": "Nigute menya ikosa?",
+        "a": "Fungura inyandiko ukoreshe Tanga ikirego. Ushobora gusiga ubutumwa. Abayobozi bashobora gusubiza ku murongo umwe."
+      },
+      {
+        "q": "Nigute navugana na Juza nkaronka igisubizo?",
+        "a": "Koresha Twandikire cyangwa Ubufasha. Niba winjiye, igisubizo kigaragara mu Kibaho → Ubutumwa bwanjye no mu nzogera. Abashyitsi bakurikirane imeri yabo."
+      },
+      {
+        "q": "Nibyibagiwe ijambobanga. Nkora iki?",
+        "a": "Ku ipaji yo kwinjira, hitamo Wibagiwe ijambobanga, andika imeri yawe, ufungure umurongo wo gusubiramo."
+      }
+    ]
+  },
+  "language": {
+    "label": "Ururimi",
+    "change": "Hindura ururimi"
+  },
+  "theme": {
+    "toggleLabel": "Hindura ibara",
+    "light": "Umucyo",
+    "dark": "Umwijima",
+    "system": "Sisitemu"
+  },
+  "home": {
+    "eyebrow": "Menya uburenganzira bwawe. Menya igihugu cyawe.",
+    "title": "Amakuru y’abaturage asobanutse, mu rurimi rwawe.",
+    "subtitle": "Amategeko, uburenganzira, na serivisi rusange by’ubuzima bwa buri munsi mu Rwanda no muri Afurika y’Uburasirazuba — byoroshye, biboneka ku buntu.",
+    "ctaBrowse": "Reba insanganyamatsiko",
+    "ctaSearch": "Shakisha kuri Juza",
+    "latestEyebrow": "Ibi bishya",
+    "latestTitle": "Inyandiko ziheruka",
+    "viewAll": "Reba byose"
+  },
+  "auth": {
+    "account": "Konti",
+    "profile": "Umwirondoro",
+    "signIn": "Injira",
+    "signInAs": "Injira nka {{role}}",
+    "signOut": "Sohoka",
+    "createAccount": "Fungura konti",
+    "email": "Imeyili",
+    "password": "Ijambobanga",
+    "fullName": "Amazina yombi",
+    "preferredLanguage": "Ururimi ukunda",
+    "preferredLanguageHint": "Urubuga ruzakoresha uru rurimi nyuma yo kwiyandikisha.",
+    "friend": "nshuti",
+    "noAccount": "Uri mushya kuri Juza?",
+    "adminAccessTitle": "Ubunyamabanga bw’ubuyobozi",
+    "adminAccessHint": "Abayobozi bakoresha uwo mwanya wo kwinjira. Nyuma yo kwinjira, fungura Ubuyobozi mu mutwe cyangwa muri menu ya konti.",
+    "adminAccessCta": "Injira ku buyobozi",
+    "haveAccount": "Usanzwe ufite konti?",
+    "backToLogin": "Subira ku kwinjira",
+    "passwordHint": "Nibura inyuguti {{min}}.",
+    "termsNotice": "Mu gufungura konti wemera amabwiriza y’imikoreshereze n’ibanga rya Juza.",
+    "checkEmailTitle": "Reba imeyili yawe",
+    "checkEmailBody": "Twohereje ihuza ryo kwemeza kuri {{email}}.",
+    "checkEmailHint": "Fungura iryo huza kuri iki gikoresho kugira ngo urangize gufungura konti yawe.",
+    "forgotPassword": "Wibagiwe ijambobanga?",
+    "forgot": {
+      "title": "Subiza ijambobanga",
+      "description": "Andika imeyili ya konti yawe. Tuzohereza ihuza ryo gusubiza.",
+      "submit": "Ohereza ihuza",
+      "sentTitle": "Reba imeyili yawe",
+      "sentBody": "Niba hari konti ya {{email}}, twohereje ihuza.",
+      "sentHint": "Fungura iryo huza kuri iki gikoresho kugira ngo uhitemo ijambobanga rishya.",
+      "demoOnly": "Gusubiza ijambobanga bisaba Supabase. Demo ntiyohereza imeyili."
+    },
+    "reset": {
+      "title": "Hitamo ijambobanga rishya",
+      "description": "Andika ijambobanga rishya rya konti yawe ya Juza.",
+      "confirm": "Emeza ijambobanga",
+      "submit": "Komeza ijambobanga",
+      "mismatch": "Amajambobanga ntabwo ahura."
+    },
+    "demoTitle": "Gerageza Juza vuba",
+    "demoHint": "Konti ebyiri z’igerageza ziratangiye — injira nk’umwe muri bo kugira ngo urebe app.",
+    "roles": {
+      "citizen": "Umuturage",
+      "contributor": "Umutanga w’ibitekerezo",
+      "admin": "Umuyobozi"
+    },
+    "roleModel": {
+      "signupTitle": "Uraza kuri Juza nk’umuturage.",
+      "citizenTitle": "Uko inshingano zikora kuri Juza",
+      "citizen": "Soma inyandiko zose, bika ibyo ushaka, hindura ururimi. Buri wese atangira aha.",
+      "contributor": "Yandika kandi atangaza inyandiko. Uyu murimo utangwa n’umuyobozi — ntutwiharire.",
+      "admin": "Yobora insanganyamatsiko, agenzura inyandiko zose, akanahindura inshingano z’abakoresha."
+    },
+    "errors": {
+      "missingFields": "Nyamuneka andika imeyili n’ijambobanga.",
+      "missingName": "Nyamuneka andika izina ryawe.",
+      "missingEmail": "Nyamuneka andika imeyili yawe.",
+      "badEmail": "Iyi meyili ntisa n’iyemewe.",
+      "shortPassword": "Ijambobanga rigomba kugira nibura inyuguti {{min}}.",
+      "missingLanguage": "Hitamo ururimi ukunda."
+    }
+  },
+  "data": {
+    "errorTitle": "Habaye ikibazo mu gukura amakuru.",
+    "loadingCategories": "Turimo gukura insanganyamatsiko…",
+    "loadingArticles": "Turimo gukura inyandiko…",
+    "loadingArticle": "Turimo gukura inyandiko…",
+    "loading": "Birimo gutunganywa…"
+  },
+  "contact": {
+    "intro": "Tubwire ku bufatanye, ikibazo, cyangwa igitekerezo kuri Juza. Abagenzuzi basoma ubutumwa bose.",
+    "name": "Izina ryawe",
+    "email": "Imeyili",
+    "subject": "Ingingo",
+    "subjectPlaceholder": "Bitari ngombwa",
+    "message": "Ubutumwa",
+    "submit": "Ohereza",
+    "successTitle": "Ubutumwa bwoherejwe",
+    "successBody": "Murakoze — umwanditsi azagusubiza kuri imeri wanditse.",
+    "successBodySignedIn": "Murakoze — iyo umwanditsi asubiza, uzahabwa itangazo kandi ushobora gusoma igisubizo muri Ubutumwa bwanjye.",
+    "signedInHint": "Winjiye, rero ibisubizo bigaragara muri porogaramu.",
+    "viewMyMessages": "Ubutumwa bwanjye",
+    "sendAnother": "Ohereza undi",
+    "reportHint": "Wabonye ikosa mu nyandiko? Fungura uyikoreshe Tanga raporo, cyangwa shakisha kuva",
+    "errors": {
+      "incomplete": "Andika izina, imeyili, n’ubutumwa bugufi.",
+      "failed": "Ntibishoboye kohereza. Ongera ugerageze."
+    }
+  },
+  "browse": {
+    "categoryEyebrow": "Insanganyamatsiko",
+    "backToAll": "Insanganyamatsiko zose",
+    "articleCount_one": "Inyandiko {{count}}",
+    "articleCount_other": "Inyandiko {{count}}",
+    "noArticlesYet": "Bizakurikira",
+    "noCategoriesTitle": "Nta nsanganyamatsiko iraboneka",
+    "noCategoriesDescription": "Igihe umuyobozi azongeraho insanganyamatsiko, zizagaragara hano.",
+    "emptyCategoryTitle": "Nta nyandiko iratangazwa hano, mu rurimi rwawe.",
+    "emptyCategoryDescription": "Gerageza urundi rurimi, cyangwa ugaruke igihe abatanga umusanzu bazaba bongereye inyandiko kuri iyi nsanganyamatsiko.",
+    "categoryNotFoundTitle": "Iyi nsanganyamatsiko ntibaho.",
+    "categoryNotFoundDescription": "Ishobora kuba yarahinduwe izina cyangwa yakuweho."
+  },
+  "article": {
+    "readMore": "Soma inyandiko",
+    "readingTime_one": "Isoma iminota {{minutes}}",
+    "readingTime_other": "Isoma iminota {{minutes}}",
+    "byAuthor": "Yanditswe na {{name}}",
+    "unknownAuthor": "Abanditsi ba Juza",
+    "availableInOther": "Iraboneka kandi mu ndimi",
+    "readingInLanguage": "Uri gusoma iyi nyandiko mu {{language}}.",
+    "readInMyLanguage": "Soma mu rurimi rwanjye",
+    "notFoundTitle": "Inyandiko ntibonetse.",
+    "notFoundDescription": "Inyandiko ushakisha ntitangajwe cyangwa yimuwe.",
+    "save": "Bika",
+    "saved": "Wabitse",
+    "follow": "Kurikira",
+    "following": "Urakurikira"
+  },
+  "search": {
+    "inputLabel": "Shakisha inyandiko",
+    "placeholder": "Shakisha inyandiko, insanganyamatsiko, uburenganzira…",
+    "clear": "Siba",
+    "startTyping": "Tangira kwandika kugira ngo ushakishe mu nsanganyamatsiko zose n’indimi zose.",
+    "resultsFor_one": "Ibisubizo {{count}} ku “{{query}}”",
+    "resultsFor_other": "Ibisubizo {{count}} ku “{{query}}”",
+    "noResultsTitle": "Nta gisubizo cyabonetse kuri “{{query}}”.",
+    "noResultsDescription": "Gerageza ijambo rigufi, indi nsanganyamatsiko, cyangwa urundi rurimi."
+  },
+  "dashboard": {
+    "greeting": "Murakaza neza, {{name}}.",
+    "savedTitle": "Inyandiko wabitse",
+    "savedEmpty": "Nta nyandiko urabikaho.",
+    "savedCount_one": "Inyandiko {{count}} wabitse.",
+    "savedCount_other": "Inyandiko {{count}} wabitse.",
+    "viewSaved": "Reba ibyabitswe",
+    "draftsTitle": "Inyandiko zawe",
+    "draftsEmpty": "Nta nyandiko urandika.",
+    "articlesCount": "{{total}} zose · {{drafts}} zitegurwa.",
+    "manageArticles": "Genzura inyandiko",
+    "newTitle": "Andika inyandiko nshya",
+    "newDescription": "Tegura inyandiko, uyireebe mbere, hanyuma uyohereze kugira ngo umwanditsi ayitangaze.",
+    "adminTitle": "Ibikoresho by’umuyobozi",
+    "adminHint": "Genzura insanganyamatsiko, ureba inyandiko, kandi uhindure inshingano z’abakoresha.",
+    "openAdmin": "Fungura ubuyobozi",
+    "messagesEyebrow": "Agasanduku",
+    "messagesTitle": "Ubutumwa bwanjye",
+    "messagesDescription": "Ubusabe n’ubutumwa wohereje, n’ibisubizo by’abagenzuzi.",
+    "messagesCardEmpty": "Nta butumwa bwo kuvugana.",
+    "messagesCardCount": "{{total}} byoherejwe · {{replied}} bifite igisubizo.",
+    "viewMessages": "Fungura ubutumwa",
+    "messagesEmptyTitle": "Nta butumwa",
+    "messagesEmptyDescription": "Iyo uvugana na Juza winjiye, umurongo n’igisubizo bigaragara hano.",
+    "messagesContactCta": "Twandikire",
+    "messagesNoSubject": "Nta nsanganywa",
+    "messagesStatusOpen": "Gutegereza igisubizo",
+    "messagesStatusReplied": "Umwanditsi yasubije",
+    "messagesStatusClosed": "Byafunguwe",
+    "messagesAdminReply": "Igisubizo cy’umwanditsi",
+    "messagesWaiting": "Nta gisubizo muri porogaramu. Uzahabwa itangazo igihe cyabaye."
+  },
+  "contribute": {
+    "title": "Saba kuba umutanga w’ibitekerezo",
+    "description": "Abatanga ibitekerezo bandika kandi batangaza inyandiko z’abaturage kuri Juza. Sobanurira umwanditsi impamvu wakwiye kuba umutanga w’ibitekerezo. Umuyobozi azasuzuma icyifuzo cyawe.",
+    "checking": "Turasuzuma icyifuzo cyawe…",
+    "reasonLabel": "Kuki ushaka gutanga umusanzu?",
+    "reasonPlaceholder": "Sobanura muri make uko wamenyekanye, insanganyamatsiko wifuza kwandikaho, n’akamaro biri ku basomyi ba Juza.",
+    "reasonHint": "Nibura inyuguti {{min}}. Ururimi rworoshye rurahagije — umwanditsi arasoma.",
+    "submit": "Ohereza icyifuzo",
+    "pendingTitle": "Icyifuzo cyawe kirimo gusuzumwa.",
+    "pendingBody": "Cyoherejwe kuwa {{date}}. Umwanditsi azafata icyemezo vuba. Ntushobora kongera kuvuga mu gihe hari ikindi kirimo gusuzumwa.",
+    "rejectedTitle": "Icyifuzo cyawe ntikyemejwe.",
+    "rejectedBody": "Cyafashwe icyemezo kuwa {{date}}. Ushobora gutunganya ibisobanuro bikanongera kugerageza.",
+    "adminNote": "Ijambo ry’umwanditsi",
+    "reapply": "Ongera usabe",
+    "errors": {
+      "tooShort": "Nyamuneka andika nibura inyuguti {{min}} kugira ngo umwanditsi ashobore gufata icyemezo."
+    }
+  },
+  "common": {
+    "cancel": "Kuraguza"
+  },
+  "myArticles": {
+    "title": "Inyandiko zawe",
+    "description": "Iziriho gutegurwa n’izatangajwe wanditse.",
+    "newArticle": "Inyandiko nshya",
+    "edit": "Hindura",
+    "updated": "Yahinduwe kuwa {{date}}",
+    "untitled": "Nta zina",
+    "emptyTitle": "Nta nyandiko urandika.",
+    "emptyDescription": "Tangira n’ikitegurwa. Igihe cyiteguye, cyohereze ngo gisuzumwe — umwanditsi azagitangaza."
+  },
+  "bookmarks": {
+    "title": "Inyandiko wabitse",
+    "description": "Ibyose wabitse, iheruka mbere.",
+    "emptyTitle": "Nta cyabitswe",
+    "emptyDescription": "Iyo ubonye inyandiko ushaka kongera gusoma, uyibike ubone hano."
+  },
+  "editor": {
+    "newTitle": "Inyandiko nshya",
+    "editTitle": "Hindura inyandiko",
+    "helpText": "Andika mu rurimi rumwe. Kugira ngo uhindure, kora indi nyandiko mu rundi rurimi ihujwe n’insanganyamatsiko imwe.",
+    "tabWrite": "Andika",
+    "tabPreview": "Reba mbere",
+    "language": "Ururimi",
+    "category": "Insanganyamatsiko",
+    "chooseCategory": "Hitamo insanganyamatsiko",
+    "titleLabel": "Umutwe",
+    "titlePlaceholder": "Uburyo bwo kubona indangamuntu",
+    "slugLabel": "Slug ya URL",
+    "slugHint": "Inyuguti nto n’akadomo gusa. Ikoreshwa muri URL y’inyandiko.",
+    "excerptLabel": "Incamake",
+    "excerptHint": "Interuro imwe cyangwa ebyiri zigaragara ku rutonde n’ushakishe.",
+    "excerptPlaceholder": "Incamake ngufi ifasha abasomyi kumenya niba ari ibyo bakeneye.",
+    "bodyLabel": "Ibirimo",
+    "bodyPlaceholder": "Andika inyandiko hano. Ta umurongo w’ubusa hagati y’ibika.",
+    "bodyHint": "Inyandiko yoroshye ifite ibika. Byihuse kandi biboneka kuri interineti idahagije.",
+    "saveDraft": "Bika icyitegurwa",
+    "publish": "Tangaza",
+    "update": "Vugurura",
+    "delete": "Siba",
+    "backToMyArticles": "Subira ku nyandiko zawe",
+    "submitForReview": "Ohereza ngo isuzumwe",
+    "reviewSubmittedTitle": "Itegereje umwanditsi.",
+    "reviewSubmittedBody": "Umuyobozi azasoma iyi nyandiko. Azayitangaza cyangwa azayisubiza hamwe n’ibisobanuro. Ntushobora kuyihindura mu gihe isuzumwa.",
+    "sentBackTitle": "Yasubijwe ngo ihindurwe",
+    "sentBackBody": "Umwanditsi yasabye ko uhindura ibi mbere yo kuyitangaza:",
+    "status": {
+      "draft": "Icyitegurwa",
+      "in_review": "Irisuzumwa",
+      "published": "Yatangajwe",
+      "archived": "Yashyinguwe"
+    },
+    "errors": {
+      "missingTitle": "Nyamuneka ha inyandiko umutwe.",
+      "missingSlug": "Inyandiko ikeneye slug ya URL.",
+      "missingBody": "Ntushobora kohereza inyandiko idafite ibirimo.",
+      "missingCategory": "Hitamo insanganyamatsiko mbere yo kohereza."
+    }
+  },
+  "report": {
+    "open": "Tangaza ikibazo kuri iyi nyandiko",
+    "title": "Tangaza ikibazo kuri iyi nyandiko",
+    "description": "Tubwire niba hari ikintu kisa n’ikibi, kidashobora, cyangwa kirenze igihe. Umwanditsi azagenzura.",
+    "reasonLabel": "Ni iki kibi?",
+    "reasons": {
+      "wrong_info": "Amakuru atari yo cyangwa arenze igihe",
+      "unsafe": "Inama zishobora kugira ingaruka mbi",
+      "spam": "Spam cyangwa ntabwo ari amakuru y’abaturage",
+      "other": "Ikindi"
+    },
+    "noteLabel": "Ibisobanuro by’inyongera (si ngombwa)",
+    "notePlaceholder": "Ni iki twagenzura? Urugero: amasaha y’ibiro by’indangamuntu ntabwo ari yo.",
+    "emailLabel": "Imeyili yawe (si ngombwa)",
+    "emailPlaceholder": "wewe@urugero.com",
+    "emailHint": "Niba ushaka ko dukomeza kuvugana. Ushobora kuyisiga ubusa.",
+    "submit": "Ohereza raporo",
+    "thanksTitle": "Murakoze — twakiriye raporo yawe.",
+    "thanksBody": "Umwanditsi azareba iyi nyandiko. Nta kindi ugomba gukora.",
+    "threadTitle": "Ikiganiro",
+    "threadEmpty": "Nta gisubizo cyaratangwa.",
+    "threadAdmin": "Umwanditsi",
+    "threadReporter": "Uwatangaje",
+    "replyLabel": "Igisubizo cyawe",
+    "replyAdminPlaceholder": "Subiza uwatangaje…",
+    "replyReporterPlaceholder": "Ongeraho ibisobanuro ku banditsi…",
+    "replySubmit": "Ohereza",
+    "articlePanelAdminTitle": "Raporo ziri kuri iyi nyandiko",
+    "articlePanelAdminHint": "Reba raporo zose kandi usubize mu kiganiro.",
+    "articlePanelMyTitle": "Raporo zawe kuri iyi nyandiko",
+    "articlePanelMyHint": "Abanditsi bashobora gusubiza hano. Ushobora kongeraho ibisobanuro."
+  },
+  "admin": {
+    "eyebrow": "Igenzura ry’ubwanditsi",
+    "title": "Ubuyobozi",
+    "description": "Genzura insanganyamatsiko, inyandiko, n’inshingano z’abakoresha.",
+    "backToOverview": "Subira ku buyobozi",
+    "categoriesTitle": "Insanganyamatsiko",
+    "categoriesDescription": "Urutonde rw’ibiciro bishyira Juza mu byiciro.",
+    "articlesTitle": "Inyandiko",
+    "articlesDescription": "Ibyanditswe byose kuri Juza, mu banditsi bose no mu ndimi zose.",
+    "usersTitle": "Abakoresha",
+    "usersDescription": "Konti zose ziri kuri Juza, hamwe n’inshingano zabo.",
+    "requestsTitle": "Ibyifuzo byo gutanga umusanzu",
+    "requestsDescription": "Abaturage basabye uburenganzira bwo gutanga umusanzu. Emeza cyangwa wange hamwe n’ibisobanuro.",
+    "requestTabs": {
+      "pending": "Bitegereje",
+      "approved": "Byemejwe",
+      "rejected": "Byanzwe"
+    },
+    "requestsEmpty": {
+      "pending": "Nta cyifuzo gitegereje. Iyo umuturage yasabye, azagaragara hano.",
+      "approved": "Nta byifuzo byemewe kugeza ubu.",
+      "rejected": "Nta byifuzo byangiwe."
+    },
+    "approve": "Emeza",
+    "reject": "Hakana",
+    "confirmReject": "Ohereza igihakanwa",
+    "rejectNoteLabel": "Impamvu (izasomwa n’usaba)",
+    "rejectNotePlaceholder": "Interuro imwe cyangwa ebyiri. Vugana neza — uyu muntu ashaka gufasha.",
+    "unknownApplicant": "Usaba udasobanutse",
+    "requestSubmitted": "Cyoherejwe kuwa {{date}}",
+    "sendBack": "Subiza",
+    "confirmSendBack": "Subiza ku wanditse",
+    "sendBackNoteLabel": "Ni iki uwanditse agomba gukosora?",
+    "sendBackNotePlaceholder": "Vuga neza kandi mu buryo bwiza. Urugero: Ongeraho aho wavanze amasaha y’umurenge.",
+    "reportsTitle": "Raporo z’abasomyi",
+    "reportsDescription": "Ibibazo abasomyi batangaje ku nyandiko zatangajwe. Kuraguza cyangwa ukure inyandiko.",
+    "messagesTitle": "Ubutumwa bwo kuvugana",
+    "messagesDescription": "Subiza hano kugira ngo abaturage binjiye bahabwe itangazo. Abashyitsi bakwiye n’imeri.",
+    "messagesEmpty": "Nta butumwa muri iyi reba.",
+    "messagesClose": "Fungura nk’ibyakozwe",
+    "messagesArchive": "Bika nta gisubizo",
+    "messagesReopen": "Fungura nanone",
+    "messagesReplyLabel": "Igisubizo cyawe",
+    "messagesReplyPlaceholder": "Andika igisubizo kigaragara ku muturage muri porogaramu (niba afite konti).",
+    "messagesSendReply": "Bika igisubizo",
+    "messagesSendReplyNotify": "Ohereza kandiumenyeshe",
+    "messagesReplyTooShort": "Andika nibura igisubizo gito.",
+    "messagesReplyFailed": "Ntibyakunze. Ongera ugerageze.",
+    "messagesYourReply": "Igisubizo cyawe",
+    "messagesLinkedAccount": "Konti ya Juza ifitanye — igisubizo kibamenyesha muri porogaramu.",
+    "messagesGuestHint": "Umushyitsi (nta konti) — igisubizo kirabikwa; bandikire na kuri imeri.",
+    "messagesEmailSubject": "Igisubizo cya Juza",
+    "messagesFilter": {
+      "open": "Bifunguye",
+      "closed": "Byakozwe",
+      "all": "Byose"
+    },
+    "reportTabs": {
+      "open": "Zifunguye",
+      "resolved": "Zakemutse",
+      "dismissed": "Zakuraguwe"
+    },
+    "reportsEmpty": {
+      "open": "Nta raporo ifunguye. Iyo umusomyi atangaje inyandiko, izagaragara hano.",
+      "resolved": "Nta raporo zakemutse kugeza ubu.",
+      "dismissed": "Nta raporo zakuraguwe."
+    },
+    "dismissReport": "Kuraguza",
+    "unpublishArticle": "Kura inyandiko",
+    "unpublishDefaultReason": "Yakuweho nyuma ya raporo y’umusomyi. Genzura amakuru hanyuma wongere uyohereze.",
+    "unknownArticle": "Inyandiko yakuweho",
+    "reportFiled": "Yatangajwe kuwa {{date}}",
+    "existingCategories": "Insanganyamatsiko zisanzwe",
+    "addCategory": "Ongera cyangwa uhindure insanganyamatsiko",
+    "name": "Izina",
+    "slug": "Slug",
+    "saveCategory": "Bika insanganyamatsiko",
+    "delete": "Siba",
+    "confirmDeleteCategory": "Siba iyi nsanganyamatsiko? Inyandiko zizakomeza kubaho ariko zitakaza insanganyamatsiko.",
+    "confirmDeleteArticle": "Siba iyi nyandiko? Ntibisubirwaho muri demo.",
+    "role": "Inshingano",
+    "you": "wowe",
+    "joined": "Yinjiye kuwa {{date}}",
+    "noArticlesForFilter": "Nta nyandiko ihuye n’iri huriro.",
+    "filter": {
+      "all": "Byose",
+      "in_review": "Zirisuzumwa",
+      "draft": "Bitegurwa",
+      "published": "Byatangajwe",
+      "archived": "Byashyinguwe"
+    },
+    "errors": {
+      "missingFields": "Nyamuneka uzuza izina mu ndimi eshatu zose, hamwe na slug."
+    }
+  },
+  "pages": {
+    "browse": {
+      "title": "Reba insanganyamatsiko",
+      "description": "Amakuru y’abaturage ashyizwe mu byiciro."
+    },
+    "article": {
+      "title": "Inyandiko",
+      "description": "Amakuru y’abaturage arambuye."
+    },
+    "search": {
+      "title": "Shakisha",
+      "description": "Shaka inyandiko mu byiciro byose no mu ndimi zose."
+    },
+    "login": {
+      "title": "Injira",
+      "description": "Murakaza neza."
+    },
+    "register": {
+      "title": "Fungura konti yawe",
+      "description": "Iyandikishe kuri Juza kugira ngo ubike inyandiko kandi, niba ubishaka, utange umusanzu."
+    },
+    "dashboard": {
+      "title": "Ikibaho",
+      "description": "Inyandiko wabitse n’inyandiko utegura."
+    },
+    "notFound": {
+      "title": "Iyi paji ntibonetse",
+      "description": "Iyi paji ushakisha ntibaho cyangwa yimuwe.",
+      "backHome": "Garuka ahabanza"
+    }
+  },
+  "footer": {
+    "about": "Ibyerekeye",
+    "contact": "Twandikire",
+    "privacy": "Ibanga",
+    "terms": "Amabwiriza",
+    "rights": "Uburenganzira bwose burahawe.",
+    "builtWith": "Yubatswe kugira ngo ubumenyi bw’abaturage bugerweho na buri wese."
+  },
+  "static": {
+    "about": {
+      "title": "Ibyerekeye Juza",
+      "description": "Ubumenyi bw’abaturage busobanutse mu Rwanda no muri Afurika y’Uburasirazuba.",
+      "body": [
+        "Juza ihuriza hamwe amategeko, uburenganzira n’oserivisi rusange — byanditse mu buryo bworoshye, mu Cyongereza, Igifaransa n’Ikinyarwanda.",
+        "Abaturage basoma kandi bakabika inyandiko ku buntu. Abandika batanga ibisuzumwa. Abayobozi bita ku buryo ibintu biba byizewe.",
+        "Intego yacu ni iyoroheye: buri wese agomba gusobanukirwa uko igihugu cye gikora."
+      ]
+    },
+    "contact": {
+      "title": "Twandikire",
+      "description": "Dusoma ubutumwa bwose.",
+      "body": [
+        "Ku bibazo byerekeye ibirimo, ubufatanye cyangwa gutanga inyandiko, twohereze imeri kuri hello@juza.local.",
+        "Niba wabonye ikosa, koresha buto yo gutanga raporo ku rupapuro rw’inyandiko — ihita igerayo ku bandika."
+      ]
+    },
+    "privacy": {
+      "title": "Ibanga",
+      "description": "Uko Juza ikoresha amakuru yawe.",
+      "body": [
+        "Dufata gusa ibyo dukeneza kuri konti yawe: amazina, imeri, ibikubiye n’inyandiko zitarangiye.",
+        "Ntiducuruza amakuru yihariye. Amasesiyo akoreshwa mu kugufasha kwinjira no kurinda urubuga.",
+        "Ushobora gusaba ko konti yawe isibwa. Mu buryo bwa demo, amakuru aguma muri mudasobwa yawe."
+      ]
+    },
+    "terms": {
+      "title": "Amabwiriza y’ikoreshwa",
+      "description": "Amasezerano magufi yo gukoresha Juza.",
+      "body": [
+        "Juza itanga amakuru y’abaturage yo kwiga no gufata ibyemezo. Ntabwo isimbura inama z’amategeko zemewe.",
+        "Abandika bemera gutanga amakuru y’ukuri no kubahiriza isuzuma mbere yo gusohora.",
+        "Gukoresha nabi urubuga — harimo spam, gutoteza cyangwa amakuru y’ibinyoma — bishobora gutuma konti hagaragara."
+      ]
+    }
+  }
+}
