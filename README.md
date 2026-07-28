@@ -30,7 +30,7 @@ Password reset uses Supabase Auth email. Follow updates and contact replies also
 ## Quick start
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/ishejaladouce/Juza.git
 cd Juza
 npm install
 cp .env.example .env
