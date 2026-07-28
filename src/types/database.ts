@@ -255,67 +255,61 @@ export interface NotificationInsert {
   link?: string | null;
 }
 
+/** Table shape expected by @supabase/supabase-js (Relationships required). */
+type DbTable<Row, Insert, Update> = {
+  Row: Row;
+  Insert: Insert;
+  Update: Update;
+  Relationships: [];
+};
+
 export interface Database {
   public: {
     Tables: {
-      profiles: {
-        Row: Profile;
-        Insert: ProfileInsert;
-        Update: ProfileUpdate;
-      };
-      categories: {
-        Row: Category;
-        Insert: Omit<Category, 'id' | 'created_at' | 'updated_at'> & {
-          id?: string;
-        };
-        Update: Partial<Omit<Category, 'id' | 'created_at' | 'updated_at'>>;
-      };
-      articles: {
-        Row: Article;
-        Insert: ArticleInsert;
-        Update: ArticleUpdate;
-      };
-      saved_articles: {
-        Row: SavedArticle;
-        Insert: SavedArticle;
-        Update: Partial<SavedArticle>;
-      };
-      article_follows: {
-        Row: ArticleFollow;
-        Insert: Omit<ArticleFollow, 'created_at'> & { created_at?: string };
-        Update: Partial<ArticleFollow>;
-      };
-      notifications: {
-        Row: Notification;
-        Insert: NotificationInsert;
-        Update: Partial<Pick<Notification, 'read_at' | 'title' | 'body'>>;
-      };
-      contributor_requests: {
-        Row: ContributorRequest;
-        Insert: ContributorRequestInsert;
-        Update: ContributorRequestUpdate;
-      };
-      article_reports: {
-        Row: ArticleReport;
-        Insert: ArticleReportInsert;
-        Update: ArticleReportUpdate;
-      };
-      article_report_replies: {
-        Row: ArticleReportReply;
-        Insert: ArticleReportReplyInsert;
-        Update: Partial<Pick<ArticleReportReply, 'body'>>;
-      };
-      contact_messages: {
-        Row: ContactMessageRow;
-        Insert: {
+      profiles: DbTable<Profile, ProfileInsert, ProfileUpdate>;
+      categories: DbTable<
+        Category,
+        Omit<Category, 'id' | 'created_at' | 'updated_at'> & { id?: string },
+        Partial<Omit<Category, 'id' | 'created_at' | 'updated_at'>>
+      >;
+      articles: DbTable<Article, ArticleInsert, ArticleUpdate>;
+      saved_articles: DbTable<SavedArticle, SavedArticle, Partial<SavedArticle>>;
+      article_follows: DbTable<
+        ArticleFollow,
+        Omit<ArticleFollow, 'created_at'> & { created_at?: string },
+        Partial<ArticleFollow>
+      >;
+      notifications: DbTable<
+        Notification,
+        NotificationInsert,
+        Partial<Pick<Notification, 'read_at' | 'title' | 'body'>>
+      >;
+      contributor_requests: DbTable<
+        ContributorRequest,
+        ContributorRequestInsert,
+        ContributorRequestUpdate
+      >;
+      article_reports: DbTable<
+        ArticleReport,
+        ArticleReportInsert,
+        ArticleReportUpdate
+      >;
+      article_report_replies: DbTable<
+        ArticleReportReply,
+        ArticleReportReplyInsert,
+        Partial<Pick<ArticleReportReply, 'body'>>
+      >;
+      contact_messages: DbTable<
+        ContactMessageRow,
+        {
           name: string;
           email: string;
           subject?: string | null;
           message: string;
           status?: 'open' | 'closed';
           user_id?: string | null;
-        };
-        Update: Partial<
+        },
+        Partial<
           Pick<
             ContactMessageRow,
             | 'status'
@@ -324,8 +318,17 @@ export interface Database {
             | 'replied_by'
             | 'user_id'
           >
-        >;
-      };
+        >
+      >;
+    };
+    Views: {
+      [_ in never]: never;
+    };
+    Functions: {
+      [_ in never]: never;
+    };
+    CompositeTypes: {
+      [_ in never]: never;
     };
     Enums: {
       user_role: UserRole;

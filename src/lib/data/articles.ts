@@ -20,6 +20,7 @@ import type {
   ArticleInsert,
   ArticleStatus,
   ArticleUpdate,
+  Category,
   LanguageCode,
 } from '@/types/database';
 
@@ -372,12 +373,24 @@ export async function searchArticles(
   }
 
   // 3) Match category names (e.g. "ubutaka" → Land & Housing)
+  type CategorySearchRow = Pick<
+    Category,
+    | 'id'
+    | 'name_en'
+    | 'name_fr'
+    | 'name_rw'
+    | 'description_en'
+    | 'description_fr'
+    | 'description_rw'
+  >;
   const { data: categories, error: catError } = await supabase
     .from('categories')
-    .select('id, name_en, name_fr, name_rw, description_en, description_fr, description_rw');
+    .select(
+      'id, name_en, name_fr, name_rw, description_en, description_fr, description_rw',
+    );
   if (catError) throw catError;
 
-  const matchedCategoryIds = (categories ?? [])
+  const matchedCategoryIds = ((categories ?? []) as CategorySearchRow[])
     .filter((cat) => {
       const blob = [
         cat.name_en,
@@ -392,7 +405,7 @@ export async function searchArticles(
         .toLowerCase();
       return tokens.some((t) => blob.includes(t));
     })
-    .map((cat) => cat.id as string);
+    .map((cat) => cat.id);
 
   if (matchedCategoryIds.length > 0) {
     const { data: catArticles, error: catArtError } = await supabase
