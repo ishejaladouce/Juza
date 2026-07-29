@@ -15,7 +15,8 @@ With `.env` pointing at the Juza project, these tables respond over the REST API
 | `article_reports` | live |
 | `article_report_replies` | run `0008` if missing |
 | `contact_messages` | run `0007` if missing |
-| `article_follows` / `notifications` | run `0009` for follow + bell |
+| `article_follows` / `notifications` | run `0009` for follow + bell; run `0013` for author + request notices |
+| Storage `avatars` | run `0014` for profile photo uploads |
 
 The app uses **Supabase** whenever `VITE_SUPABASE_URL` + `VITE_SUPABASE_ANON_KEY` are set.
 
@@ -38,6 +39,8 @@ Demo (localStorage) is **opt-in only**: set `VITE_ALLOW_DEMO=true`. Without Supa
    - [`migrations/0010_contact_replies.sql`](./migrations/0010_contact_replies.sql)
    - [`migrations/0011_srs_account_feedback_settings.sql`](./migrations/0011_srs_account_feedback_settings.sql)
    - [`migrations/0012_seed_all_missing_articles.sql`](./migrations/0012_seed_all_missing_articles.sql) — run anytime to fill missing sample articles (safe to re-run)
+   - [`migrations/0013_author_and_request_notifications.sql`](./migrations/0013_author_and_request_notifications.sql) — author approve/send-back notices + contributor request decisions
+   - [`migrations/0014_avatar_storage.sql`](./migrations/0014_avatar_storage.sql) — profile photo storage bucket (`avatars`)
 
 ### Fix empty search for land / birth / business / etc.
 

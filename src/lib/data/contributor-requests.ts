@@ -102,17 +102,10 @@ export async function rejectContributorRequest(
   }
   const note = adminNote.trim();
   if (!note) throw new Error('Please add a short note so the applicant understands.');
-  const { data, error } = await getSupabase()
-    .from('contributor_requests')
-    .update({
-      status: 'rejected',
-      admin_note: note,
-      reviewed_by: reviewerId,
-      reviewed_at: new Date().toISOString(),
-    } as never)
-    .eq('id', id)
-    .select('*')
-    .single();
+  const { data, error } = await getSupabase().rpc('reject_contributor_request', {
+    request_id: id,
+    admin_note: note,
+  } as never);
   if (error) throw error;
-  return data as ContributorRequest;
+  return data as unknown as ContributorRequest;
 }

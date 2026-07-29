@@ -20,7 +20,7 @@
     "label": "Notifications",
     "unreadLabel": "{{count}} unread notifications",
     "title": "Notifications",
-    "empty": "No notifications yet. Follow an article to get updates.",
+    "empty": "No notifications yet. Follow articles, or wait for review updates on your submissions.",
     "markAllRead": "Mark all read"
   },
   "help": {
@@ -284,7 +284,12 @@
   "settings": {
     "eyebrow": "Account",
     "title": "Settings",
-    "description": "Language preference and optional email alerts for followed articles.",
+    "description": "Profile photo, language, and optional email alerts.",
+    "avatar": "Profile photo",
+    "avatarHint": "JPG, PNG, WebP, or GIF — up to 2 MB.",
+    "avatarUpload": "Upload photo",
+    "avatarRemove": "Remove",
+    "avatarError": "Could not update your photo. Try again.",
     "language": "Preferred language",
     "languageHint": "Used as your default language in Juza.",
     "emailNotifications": "Email me when followed articles update",

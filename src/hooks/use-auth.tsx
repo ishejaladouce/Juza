@@ -213,9 +213,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
               ...(fullName ? { full_name: fullName } : {}),
               preferred_language: lang,
             },
-            emailRedirectTo: import.meta.env.VITE_SITE_URL
-              ? `${import.meta.env.VITE_SITE_URL}/login`
-              : undefined,
+            emailRedirectTo: `${window.location.origin}/login`,
           },
         });
         if (error) return { ok: false, error: formatAuthError(error) };

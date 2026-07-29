@@ -32,7 +32,8 @@ export default function ForgotPasswordPage() {
 
     setSubmitting(true);
     try {
-      const redirectTo = `${import.meta.env.VITE_SITE_URL ?? window.location.origin}/reset-password`;
+      // Always use the site the user is on (not a stale VITE_SITE_URL like localhost).
+      const redirectTo = `${window.location.origin}/reset-password`;
       const { error: err } = await getSupabase().auth.resetPasswordForEmail(
         email.trim(),
         { redirectTo },

@@ -56,9 +56,17 @@ export function UserMenu() {
         >
           <span
             aria-hidden="true"
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-sm font-semibold text-primary"
+            className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-primary/10 text-sm font-semibold text-primary"
           >
-            {initials}
+            {profile?.avatar_url ? (
+              <img
+                src={profile.avatar_url}
+                alt=""
+                className="h-full w-full object-cover"
+              />
+            ) : (
+              initials
+            )}
           </span>
         </Button>
       </DropdownMenuTrigger>

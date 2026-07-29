@@ -230,8 +230,12 @@ export interface ArticleFollow {
 export type NotificationKind =
   | 'article_updated'
   | 'article_published'
+  | 'article_approved'
+  | 'article_sent_back'
   | 'system'
-  | 'contact_reply';
+  | 'contact_reply'
+  | 'contributor_approved'
+  | 'contributor_rejected';
 
 export interface Notification {
   id: string;

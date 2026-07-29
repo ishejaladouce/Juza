@@ -339,7 +339,33 @@ export async function demoUpdateArticle(
   };
   saveArticles(rows.map((a) => (a.id === id ? merged : a)));
   notifyFollowersOnArticleChange(existing, merged);
+  notifyAuthorOnArticleStatus(existing, merged);
   return merged;
+}
+
+function notifyUser(input: {
+  userId: string;
+  articleId?: string | null;
+  kind: Notification['kind'];
+  title: string;
+  body: string | null;
+  link: string;
+}) {
+  const existing = readList<Notification>(KEYS.notifications, []);
+  writeList(KEYS.notifications, [
+    {
+      id: newId(),
+      user_id: input.userId,
+      article_id: input.articleId ?? null,
+      kind: input.kind,
+      title: input.title,
+      body: input.body,
+      link: input.link,
+      read_at: null,
+      created_at: nowISO(),
+    },
+    ...existing,
+  ].slice(0, 100));
 }
 
 function notifyFollowersOnArticleChange(oldArticle: Article, next: Article) {
@@ -377,7 +403,46 @@ function notifyFollowersOnArticleChange(oldArticle: Article, next: Article) {
     read_at: null,
     created_at: nowISO(),
   }));
-  writeList(KEYS.notifications, [...created, ...existing]);
+  writeList(KEYS.notifications, [...created, ...existing].slice(0, 100));
+}
+
+function notifyAuthorOnArticleStatus(oldArticle: Article, next: Article) {
+  if (!next.author_id) return;
+
+  if (oldArticle.status === 'in_review' && next.status === 'published') {
+    notifyUser({
+      userId: next.author_id,
+      articleId: next.id,
+      kind: 'article_approved',
+      title: 'Your article was approved',
+      body: next.title,
+      link: `/article/${next.slug}`,
+    });
+    return;
+  }
+
+  if (oldArticle.status === 'in_review' && next.status === 'draft') {
+    notifyUser({
+      userId: next.author_id,
+      articleId: next.id,
+      kind: 'article_sent_back',
+      title: 'Your article needs changes',
+      body: next.review_note?.trim() || next.title,
+      link: `/dashboard/articles/${next.id}`,
+    });
+    return;
+  }
+
+  if (oldArticle.status === 'published' && next.status === 'draft') {
+    notifyUser({
+      userId: next.author_id,
+      articleId: next.id,
+      kind: 'system',
+      title: 'Your article was unpublished',
+      body: next.title,
+      link: `/dashboard/articles/${next.id}`,
+    });
+  }
 }
 
 export async function demoSubmitArticleForReview(
@@ -424,6 +489,7 @@ export async function demoApproveArticle(id: string): Promise<Article> {
   };
   saveArticles(rows.map((a) => (a.id === id ? merged : a)));
   notifyFollowersOnArticleChange(existing, merged);
+  notifyAuthorOnArticleStatus(existing, merged);
   return merged;
 }
 
@@ -449,6 +515,7 @@ export async function demoSendBackArticle(
     updated_at: nowISO(),
   };
   saveArticles(rows.map((a) => (a.id === id ? merged : a)));
+  notifyAuthorOnArticleStatus(existing, merged);
   return merged;
 }
 
@@ -467,6 +534,7 @@ export async function demoUnpublishArticle(
     updated_at: nowISO(),
   };
   saveArticles(rows.map((a) => (a.id === id ? merged : a)));
+  notifyAuthorOnArticleStatus(existing, merged);
   return merged;
 }
 
@@ -1132,6 +1200,13 @@ export async function demoApproveContributorRequest(
 ): Promise<ContributorRequest> {
   const updated = await reviewRequest(id, reviewerId, 'approved', null);
   await demoUpdateProfile(updated.user_id, { role: 'contributor' });
+  notifyUser({
+    userId: updated.user_id,
+    kind: 'contributor_approved',
+    title: 'You are now a contributor',
+    body: 'An administrator approved your request. You can write and submit articles.',
+    link: '/dashboard',
+  });
   return updated;
 }
 
@@ -1144,7 +1219,15 @@ export async function demoRejectContributorRequest(
   if (!note) {
     throw new Error('Please add a short note so the applicant understands.');
   }
-  return reviewRequest(id, reviewerId, 'rejected', note);
+  const updated = await reviewRequest(id, reviewerId, 'rejected', note);
+  notifyUser({
+    userId: updated.user_id,
+    kind: 'contributor_rejected',
+    title: 'Contributor request not approved',
+    body: note,
+    link: '/dashboard',
+  });
+  return updated;
 }
 
 export function demoResetAll() {
