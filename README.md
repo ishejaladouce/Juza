@@ -2,10 +2,16 @@
 
 Juza (Kiswahili for “to inform”) is a civic information platform for Rwanda and East Africa. Citizens can find rights, rules, and public services in plain language, in English, French, and Kinyarwanda.
 
-**Live demo:** [ ] 
-**Repository:** keep this GitHub repo **public** so markers can open it.
+This repository is the web app (React + TypeScript). Authentication and data use [Supabase](https://supabase.com) (Auth + Postgres + Row Level Security + Storage). There is no separate Express or Prisma API.
 
-This repository is the web app (React + TypeScript). Authentication and data use [Supabase](https://supabase.com) (Auth + Postgres + Row Level Security). There is no separate Express or Prisma API.
+## Links
+
+| Item | URL |
+| --- | --- |
+| Live demo | https://juza.vercel.app |
+| GitHub repository | https://github.com/ishejaladouce/Juza |
+
+Keep the GitHub repo **public**.
 
 
 ## Features
@@ -13,11 +19,11 @@ This repository is the web app (React + TypeScript). Authentication and data use
 | Who | What they can do |
 | --- | --- |
 | Visitor | Browse categories, search articles, switch language (EN / FR / RW), read Help/FAQ, send a contact message |
-| Citizen | Create an account, choose preferred language, save bookmarks, follow articles (in-app notifications), flag outdated content, ask a question on an article, track feedback status, read contact replies, optional email-alert preference in Settings, apply to become a contributor |
-| Contributor | Add, update, and remove draft articles; submit articles for review |
-| Admin | Manage categories and users (change roles, suspend, remove), approve contributors, review and publish articles, handle reports and contact replies, view platform activity |
+| Citizen | Create an account, set preferred language, upload a profile photo, save bookmarks, follow articles, receive in-app notifications, flag outdated content, ask a question on an article, track feedback, read contact replies, apply to become a contributor |
+| Contributor | Add, update, and remove draft articles; submit articles for review; get notified when an article is approved, sent back, or unpublished |
+| Admin | Manage categories and users (roles, suspend, remove), approve or reject contributor requests (applicant is notified), review and publish or send back articles, handle reports and contact replies, view platform activity |
 
-Password reset uses Supabase Auth email. Follow updates and contact replies also appear in the in-app notification bell when signed in.
+Password reset uses Supabase Auth email. In-app notification bell covers follows, contact replies, account suspend/restore, article review outcomes for authors, and contributor request decisions.
 
 
 ## Requirements
@@ -64,21 +70,23 @@ Open Supabase → **SQL Editor**. Run every file in `supabase/migrations/` **in 
 9. `0009_follows_and_notifications.sql`
 10. `0010_contact_replies.sql`
 11. `0011_srs_account_feedback_settings.sql`
-12. `0012_seed_all_missing_articles.sql` (fills any missing sample articles — safe to re-run)
+12. `0012_seed_all_missing_articles.sql` (fills missing sample articles — safe to re-run)
+13. `0013_author_and_request_notifications.sql` (author + contributor-request in-app notices)
+14. `0014_avatar_storage.sql` (profile photo Storage bucket `avatars`)
 
-If search finds categories but not topics like land / birth certificate / business, run **only** `0012_seed_all_missing_articles.sql` once in the SQL Editor.
+If search finds categories but not topics like land / birth certificate / business, run **only** `0012_seed_all_missing_articles.sql` once.
 
 
 ## Auth URLs (required)
 
 Supabase → **Authentication** → **URL configuration**:
 
-| Setting | Local development |
-| --- | --- |
-| Site URL | `http://localhost:5173` |
-| Redirect URLs | `http://localhost:5173/**`, `http://localhost:5173/login`, `http://localhost:5173/reset-password` |
+| Setting | Local development | Production (after deploy) |
+| --- | --- | --- |
+| Site URL | `http://localhost:5173` | `https://juza.vercel.app` |
+| Redirect URLs | `http://localhost:5173/**`, `/login`, `/reset-password` | `https://juza.vercel.app/**`, `/login`, `/reset-password` |
 
-After you deploy, replace these with your production URL the same way.
+If your Vercel URL differs, use that origin instead of `juza.vercel.app`.
 
 
 ## Run locally
@@ -100,9 +108,9 @@ Open [http://localhost:5173](http://localhost:5173).
 
 ## First admin account
 
-1. Supabase → **Authentication** → **Users** → **Add user**  
-   - Email example: `admin@juza.com`  
-   - Choose a strong password  
+1. Supabase → **Authentication** → **Users** → **Add user**
+   - Email example: `admin@juza.com`
+   - Choose a strong password
    - Enable **Auto Confirm User**
 
 2. Run this in the **SQL Editor** (change the email if needed). Migration `0005` must already be applied:
@@ -124,21 +132,18 @@ If the update changes **0 rows**, create the Auth user first, then run the SQL a
 
 ## Deploy (public URL)
 
-Markers need a URL that works on the public internet.
-
 1. Push this project to a **public** GitHub repository.
 2. Import the repo on [Vercel](https://vercel.com) (framework: Vite).
-3. Set environment variables:
+3. Set environment variables (Production + Preview):
    - `VITE_SUPABASE_URL`
    - `VITE_SUPABASE_ANON_KEY`
-   - `VITE_SITE_URL` = your Vercel URL (for example `https://your-app.vercel.app`)
-4. In Supabase, set **Site URL** and **Redirect URLs** to that same production origin (include `/login` and `/reset-password`).
-5. Deploy.
+   - `VITE_SITE_URL` = your live URL (example: `https://juza.vercel.app`)
+4. In Supabase, set **Site URL** and **Redirect URLs** to that production origin.
+5. Deploy, then update the **Live demo** row in the Links table above if the URL changed.
 
-- Build command: `npm run build`  
+- Build command: `npm run build`
 - Output directory: `dist`
 
-After deploy, paste the live URL at the top of this README under **Live demo**.
 
 ## Project structure
 
@@ -160,11 +165,8 @@ Juza/
 ```
 
 
-
 ## Design notes
 
 Colours and type live in `src/styles/globals.css`. Accent colour is forest green. Display font: Newsreader. UI font: Source Sans 3. Article body: Source Serif 4.
 
 The UI uses semantic landmarks, a skip link, visible focus styles, and `aria-label`s on icon-only controls. `<html lang>` follows the active language.
-
-
